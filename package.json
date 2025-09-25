@@ -19,7 +19,7 @@
   },
   "author": "Fireberry",
   "license": "ISC",
-  "readme": "README.npm.md",
+  "readme": "README.md",
   "devDependencies": {
     "@babel/core": "^7.23.9",
     "@babel/preset-env": "^7.23.9",
@@ -73,5 +73,9 @@
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fireberry-crm/design-system.git"
   }
 }
