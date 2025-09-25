@@ -1,0 +1,22 @@
+import { Meta, Canvas, Controls, Story, Title, IconGallery, IconItem } from '@storybook/blocks';
+import Icon from './index';
+import { IconName, IconProps, IconSize } from './types';
+import * as IconStories from './Icon.stories';
+
+# Icon
+
+<Meta of={IconStories} />
+
+<Canvas of={IconStories.Overview} />
+
+<Controls />
+
+# Icon Gallery
+
+<IconGallery>
+  {Object.entries(IconName).map(([key, value]) => (
+    <IconItem key={key} name={key}>
+      <Icon icon={value} />
+    </IconItem>
+  ))}
+</IconGallery>
