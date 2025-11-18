@@ -3,6 +3,13 @@ import type { Meta, StoryObj } from '@storybook/react';
 import Typography from './Typography';
 import { TypographyType } from './types';
 import { Color } from '../../../types';
+import { palette } from '../../../context/ThemeContext/palette';
+
+const descriptionStyle = {
+  fontSize: '14px',
+  marginTop: '8px',
+  color: palette.gray7,
+};
 
 const meta: Meta<typeof Typography> = {
   title: 'Basics/Typography',
@@ -257,13 +264,13 @@ export const AllVariants: Story = {
   render: () => (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>
       <div>
-        <h2 style={{ color: '#266fd9', marginBottom: '24px' }}>Sizes - Regular</h2>
+        <h2 style={{ color: palette.ocean8, marginBottom: '24px' }}>Sizes - Regular</h2>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
           <div>
             <Typography type={TypographyType.h1}>
               {sampleText}
             </Typography>
-            <div style={{ fontSize: '14px', marginTop: '8px', color: '#666' }}>
+            <div style={descriptionStyle}>
               H1 - Font size: 32pt, Line Height: 38pt
             </div>
           </div>
@@ -271,7 +278,7 @@ export const AllVariants: Story = {
             <Typography type={TypographyType.h2}>
               {sampleText}
             </Typography>
-            <div style={{ fontSize: '14px', marginTop: '8px', color: '#666' }}>
+            <div style={descriptionStyle}>
               H2 - Font size: 28pt, Line Height: 32pt
             </div>
           </div>
@@ -279,7 +286,7 @@ export const AllVariants: Story = {
             <Typography type={TypographyType.h3}>
               {sampleText}
             </Typography>
-            <div style={{ fontSize: '14px', marginTop: '8px', color: '#666' }}>
+            <div style={descriptionStyle}>
               H3 - Font size: 24pt, Line Height: 28pt
             </div>
           </div>
@@ -287,7 +294,7 @@ export const AllVariants: Story = {
             <Typography type={TypographyType.title}>
               {sampleText}
             </Typography>
-            <div style={{ fontSize: '14px', marginTop: '8px', color: '#666' }}>
+            <div style={descriptionStyle}>
               Title - Font size: 20pt, Line Height: 24pt
             </div>
           </div>
@@ -295,7 +302,7 @@ export const AllVariants: Story = {
             <Typography type={TypographyType.subTitle}>
               {sampleText}
             </Typography>
-            <div style={{ fontSize: '14px', marginTop: '8px', color: '#666' }}>
+            <div style={descriptionStyle}>
               SubTitle - Font size: 18pt, Line Height: 24pt
             </div>
           </div>
@@ -303,7 +310,7 @@ export const AllVariants: Story = {
             <Typography type={TypographyType.largeText}>
               {sampleText}
             </Typography>
-            <div style={{ fontSize: '14px', marginTop: '8px', color: '#666' }}>
+            <div style={descriptionStyle}>
               Large Text - Font size: 16pt, Line Height: 24pt
             </div>
           </div>
@@ -311,7 +318,7 @@ export const AllVariants: Story = {
             <Typography type={TypographyType.text}>
               {sampleText}
             </Typography>
-            <div style={{ fontSize: '14px', marginTop: '8px', color: '#666' }}>
+            <div style={descriptionStyle}>
               Text - Font size: 14pt, Line Height: 20pt
             </div>
           </div>
@@ -319,7 +326,7 @@ export const AllVariants: Story = {
             <Typography type={TypographyType.caption}>
               {sampleText}
             </Typography>
-            <div style={{ fontSize: '14px', marginTop: '8px', color: '#666' }}>
+            <div style={descriptionStyle}>
               Caption - Font size: 12pt, Line Height: 16pt
             </div>
           </div>
@@ -327,13 +334,13 @@ export const AllVariants: Story = {
       </div>
 
       <div>
-        <h2 style={{ color: '#266fd9', marginBottom: '24px' }}>Sizes - Bold</h2>
+        <h2 style={{ color: palette.ocean8, marginBottom: '24px' }}>Sizes - Bold</h2>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
           <div>
             <Typography type={TypographyType.h1} bold>
               {sampleText}
             </Typography>
-            <div style={{ fontSize: '14px', marginTop: '8px', color: '#666' }}>
+            <div style={descriptionStyle}>
               H1 Bold - Font size: 32pt, Line Height: 38pt
             </div>
           </div>
@@ -341,7 +348,7 @@ export const AllVariants: Story = {
             <Typography type={TypographyType.h2} bold>
               {sampleText}
             </Typography>
-            <div style={{ fontSize: '14px', marginTop: '8px', color: '#666' }}>
+            <div style={descriptionStyle}>
               H2 Bold - Font size: 28pt, Line Height: 32pt
             </div>
           </div>
@@ -349,7 +356,7 @@ export const AllVariants: Story = {
             <Typography type={TypographyType.h3} bold>
               {sampleText}
             </Typography>
-            <div style={{ fontSize: '14px', marginTop: '8px', color: '#666' }}>
+            <div style={descriptionStyle}>
               H3 Bold - Font size: 24pt, Line Height: 28pt
             </div>
           </div>
@@ -357,7 +364,7 @@ export const AllVariants: Story = {
             <Typography type={TypographyType.title} bold>
               {sampleText}
             </Typography>
-            <div style={{ fontSize: '14px', marginTop: '8px', color: '#666' }}>
+            <div style={descriptionStyle}>
               Title Bold - Font size: 20pt, Line Height: 24pt
             </div>
           </div>
@@ -365,7 +372,7 @@ export const AllVariants: Story = {
             <Typography type={TypographyType.subTitle} bold>
               {sampleText}
             </Typography>
-            <div style={{ fontSize: '14px', marginTop: '8px', color: '#666' }}>
+            <div style={descriptionStyle}>
               SubTitle Bold - Font size: 18pt, Line Height: 24pt
             </div>
           </div>
@@ -373,7 +380,7 @@ export const AllVariants: Story = {
             <Typography type={TypographyType.largeText} bold>
               {sampleText}
             </Typography>
-            <div style={{ fontSize: '14px', marginTop: '8px', color: '#666' }}>
+            <div style={descriptionStyle}>
               Large Text Bold - Font size: 16pt, Line Height: 24pt
             </div>
           </div>
@@ -381,7 +388,7 @@ export const AllVariants: Story = {
             <Typography type={TypographyType.text} bold>
               {sampleText}
             </Typography>
-            <div style={{ fontSize: '14px', marginTop: '8px', color: '#666' }}>
+            <div style={descriptionStyle}>
               Text Bold - Font size: 14pt, Line Height: 20pt
             </div>
           </div>
@@ -389,7 +396,7 @@ export const AllVariants: Story = {
             <Typography type={TypographyType.caption} bold>
               {sampleText}
             </Typography>
-            <div style={{ fontSize: '14px', marginTop: '8px', color: '#666' }}>
+            <div style={descriptionStyle}>
               Caption Bold - Font size: 12pt, Line Height: 16pt
             </div>
           </div>
@@ -417,7 +424,7 @@ export const Underline: Story = {
 
 export const Ellipsis: Story = {
   render: () => (
-    <div style={{ width: '300px', border: '1px solid #ccc', padding: '8px' }}>
+    <div style={{ width: '300px', border: `1px solid ${palette.gray4}`, padding: '8px' }}>
       <Typography type={TypographyType.text} ellipsis>
         This is a very long text that will be truncated with an ellipsis when it exceeds the container width
       </Typography>
@@ -439,22 +446,22 @@ export const AllModifiers: Story = {
   render: () => (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
       <div>
-        <h3 style={{ color: '#266fd9', marginBottom: '12px' }}>Bold Prop</h3>
+        <h3 style={{ color: palette.ocean8, marginBottom: '12px' }}>Bold Prop</h3>
         <Typography type={TypographyType.text} bold>
           Regular text type with bold prop
         </Typography>
       </div>
 
       <div>
-        <h3 style={{ color: '#266fd9', marginBottom: '12px' }}>Underline</h3>
+        <h3 style={{ color: palette.ocean8, marginBottom: '12px' }}>Underline</h3>
         <Typography type={TypographyType.text} underline>
           Text with underline decoration
         </Typography>
       </div>
 
       <div>
-        <h3 style={{ color: '#266fd9', marginBottom: '12px' }}>Ellipsis</h3>
-        <div style={{ width: '250px', border: '1px dashed #ccc', padding: '8px' }}>
+        <h3 style={{ color: palette.ocean8, marginBottom: '12px' }}>Ellipsis</h3>
+        <div style={{ width: '250px', border: `1px dashed ${palette.gray4}`, padding: '8px' }}>
           <Typography type={TypographyType.text} ellipsis>
             This is a very long text that demonstrates ellipsis truncation when content overflows
           </Typography>
@@ -462,7 +469,7 @@ export const AllModifiers: Story = {
       </div>
 
       <div>
-        <h3 style={{ color: '#266fd9', marginBottom: '12px' }}>Combined</h3>
+        <h3 style={{ color: palette.ocean8, marginBottom: '12px' }}>Combined</h3>
         <Typography type={TypographyType.title} bold underline color={Color.success}>
           Bold + Underline + Color
         </Typography>
