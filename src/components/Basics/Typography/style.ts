@@ -28,6 +28,7 @@ export const Text = styled.span<TextProps>`
   ${({ ellipsis }) =>
     ellipsis &&
     css`
+      display: block;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
