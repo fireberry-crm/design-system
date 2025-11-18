@@ -61,7 +61,6 @@ type Story = StoryObj<typeof Typography>;
 
 const sampleText = 'The quick brown fox jumps over the lazy dog.';
 
-// Regular variants
 export const H1: Story = {
   args: {
     type: TypographyType.h1,
@@ -182,7 +181,6 @@ export const CaptionBold: Story = {
   },
 };
 
-// Color variants
 export const ColorSuccess: Story = {
   args: {
     type: TypographyType.text,
@@ -223,7 +221,6 @@ export const ColorInformation: Story = {
   },
 };
 
-// Overview story showing all colors
 export const AllColors: Story = {
   render: () => (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
@@ -256,7 +253,6 @@ export const AllColors: Story = {
   ),
 };
 
-// Overview story showing all variants
 export const AllVariants: Story = {
   render: () => (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>
@@ -403,7 +399,6 @@ export const AllVariants: Story = {
   ),
 };
 
-// Text decorations and modifiers
 export const BoldProp: Story = {
   args: {
     type: TypographyType.text,
@@ -440,7 +435,6 @@ export const CombinedModifiers: Story = {
   },
 };
 
-// Practical examples
 export const AllModifiers: Story = {
   render: () => (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
