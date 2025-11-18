@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 import { palette } from '../../../context/ThemeContext/palette';
 
-export const AvatarContainer = styled.div`
+export const AvatarContainer = styled.div<{ $backgroundColor: string }>`
   width: 89px;
   height: 89px;
   border-radius: 50%;
-  background-color: ${palette.ocean9};
+  background-color: ${({ backgroundColor }) => backgroundColor};
   display: flex;
   align-items: center;
   justify-content: center;
