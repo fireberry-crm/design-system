@@ -13,11 +13,13 @@ const Breadcrumb: FC<BreadcrumbProps> = ({ items, onItemClick }) => {
     }
   };
 
+  const lastIndex = items.length - 1;
+
   return (
     <S.BreadcrumbContainer aria-label="Breadcrumb">
       <S.BreadcrumbList>
         {items.map((item, index) => {
-          const isLast = index === items.length - 1;
+          const isLast = index === lastIndex;
           const itemKey = item.key || item.label;
 
           return (
