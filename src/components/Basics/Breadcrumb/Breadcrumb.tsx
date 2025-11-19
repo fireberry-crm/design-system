@@ -26,6 +26,7 @@ const Breadcrumb: FC<BreadcrumbProps> = ({ items, onItemClick }) => {
                 href={item.href}
                 onClick={handleClick(item, index)}
                 isLast={isLast}
+                tabIndex={0}
               >
                 {item.label}
               </S.BreadcrumbLink>
