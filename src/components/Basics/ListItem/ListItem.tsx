@@ -12,7 +12,6 @@ const ListItem: FC<ListItemProps> = ({
   active = false,
   disabled = false,
   onClick,
-  className,
 }) => {
   const hasClickHandler = !!onClick;
 
@@ -40,7 +39,6 @@ const ListItem: FC<ListItemProps> = ({
         onClick={handleClick}
         onKeyDown={handleKeyDown}
         tabIndex={disabled ? -1 : hasClickHandler ? 0 : undefined}
-        className={className}
         role={hasClickHandler ? 'button' : undefined}
       >
         {logo && logoPosition === 'start' && <S.ListItemLogoContainer>{logo}</S.ListItemLogoContainer>}
