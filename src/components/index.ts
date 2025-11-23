@@ -2,6 +2,7 @@ export { default as Button } from './Buttons/Button';
 export { default as IconButton } from './Buttons/IconButton';
 export { default as MultiButton } from './Buttons/MultiButton';
 
+export { default as Breadcrumb } from './Basics/Breadcrumb';
 export { default as Avatar } from './Basics/Avatar';
 export { default as Checkbox } from './Basics/Checkbox';
 export { default as Icon } from './Basics/Icon';
