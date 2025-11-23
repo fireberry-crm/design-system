@@ -5,7 +5,7 @@ export const AvatarContainer = styled.div<{ $backgroundColor: string }>`
   width: 89px;
   height: 89px;
   border-radius: 50%;
-  background-color: ${({ backgroundColor }) => backgroundColor};
+  background-color: ${({ $backgroundColor }) => $backgroundColor};
   display: flex;
   align-items: center;
   justify-content: center;
