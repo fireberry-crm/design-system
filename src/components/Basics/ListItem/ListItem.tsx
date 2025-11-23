@@ -5,8 +5,6 @@ import { ListItemContext } from './ListItemContext';
 
 const ListItem: FC<ListItemProps> = ({
   children,
-  logo,
-  logoPosition = 'start',
   indent,
   selected = false,
   active = false,
