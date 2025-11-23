@@ -21,13 +21,6 @@ const ListItem: FC<ListItemProps> = ({
     }
   };
 
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLLIElement>) => {
-    if (!disabled && onClick && (e.key === 'Enter' || e.key === ' ')) {
-      e.preventDefault();
-      onClick();
-    }
-  };
-
   return (
     <ListItemContext.Provider value={{ selected, active }}>
       <S.ListItemContainer
@@ -37,9 +30,6 @@ const ListItem: FC<ListItemProps> = ({
         clickable={hasClickHandler}
         indent={indent}
         onClick={handleClick}
-        onKeyDown={handleKeyDown}
-        tabIndex={disabled ? -1 : hasClickHandler ? 0 : undefined}
-        role={hasClickHandler ? 'button' : undefined}
       >
         {logo && logoPosition === 'start' && <S.ListItemLogoContainer>{logo}</S.ListItemLogoContainer>}
         {children}
