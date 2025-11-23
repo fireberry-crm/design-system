@@ -31,9 +31,7 @@ const ListItem: FC<ListItemProps> = ({
         indent={indent}
         onClick={handleClick}
       >
-        {logo && logoPosition === 'start' && <S.ListItemLogoContainer>{logo}</S.ListItemLogoContainer>}
         {children}
-        {logo && logoPosition === 'end' && <S.ListItemLogoContainer>{logo}</S.ListItemLogoContainer>}
       </S.ListItemContainer>
     </ListItemContext.Provider>
   );
