@@ -1,9 +1,6 @@
 name: Publish Design System
 
 on:
-  push:
-    branches:
-      - master
   workflow_dispatch:
 
 # Prevent concurrent deployments
