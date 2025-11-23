@@ -12,6 +12,7 @@ export enum Variant {
 export enum Color {
   success = 'success',
   destructive = 'destructive',
+  warning = 'warning',
   neutral = 'neutral',
   information = 'information',
 }

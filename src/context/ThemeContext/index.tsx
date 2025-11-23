@@ -2,6 +2,7 @@ import React, { ReactNode, createContext, useContext, useMemo } from 'react';
 import { CheckboxPalettes } from '../../components/Basics/Checkbox/types';
 import { RadioButtonPalette } from '../../components/Basics/RadioButton/types';
 import { TogglePalette } from '../../components/Basics/Toggle/types';
+import { TypographyPalette } from '../../components/Basics/Typography/types';
 import { ButtonPalettes } from '../../components/Buttons/Button/types';
 import { IconButtonPalette } from '../../components/Buttons/IconButton/types';
 import { StepperPalette } from '../../components/Navigation/Stepper/types';
@@ -17,6 +18,7 @@ interface ThemeContextType {
     stepper: StepperPalette;
     toggle: TogglePalette;
     radioButton: RadioButtonPalette;
+    typography: TypographyPalette;
   };
   isRtl: boolean;
   palette: { [key: string]: string };

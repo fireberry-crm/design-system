@@ -78,6 +78,23 @@ function getTheme() {
       text: palette.gray9,
       disabled: { default: palette.gray3, circle: palette.gray1, text: palette.gray6 },
     },
+    typography: {
+      h1: { fontSize: '32px', lineHeight: '38px' },
+      h2: { fontSize: '28px', lineHeight: '32px' },
+      h3: { fontSize: '24px', lineHeight: '28px' },
+      title: { fontSize: '20px', lineHeight: '24px' },
+      subTitle: { fontSize: '18px', lineHeight: '24px' },
+      largeText: { fontSize: '16px', lineHeight: '24px' },
+      text: { fontSize: '14px', lineHeight: '20px' },
+      caption: { fontSize: '12px', lineHeight: '16px' },
+      colors: {
+        success: palette.green8,
+        destructive: palette.red7,
+        warning: palette.orange8,
+        neutral: palette.gray10,
+        information: palette.ocean8,
+      },
+    },
   };
 }
 
