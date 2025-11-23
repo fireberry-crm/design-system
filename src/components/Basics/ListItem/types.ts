@@ -10,7 +10,6 @@ export interface ListItemProps {
   active?: boolean;
   disabled?: boolean;
   onClick?: () => void;
-  className?: string;
 }
 
 export interface ListItemIconProps {
