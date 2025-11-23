@@ -11,7 +11,7 @@ const Avatar: FC<AvatarProps> = ({ label='', imgSrc, alt }) => {
   const backgroundColor = generateAvatarColor(label);
 
   return (
-    <S.AvatarContainer backgroundColor={backgroundColor}>
+    <S.AvatarContainer $backgroundColor={backgroundColor}>
       {imgSrc ? (
         <S.AvatarImage src={imgSrc} alt={alt || label || 'Avatar'} />
       ) : (
