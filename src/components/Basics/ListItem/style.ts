@@ -45,17 +45,3 @@ export const ListItemIconContainer = styled.div`
   justify-content: center;
   flex-shrink: 0;
 `;
-
-export const ListItemEndIconsContainer = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-shrink: 0;
-`;
-
-export const ListItemLogoContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-`;
