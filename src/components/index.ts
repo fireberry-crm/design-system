@@ -6,5 +6,6 @@ export { default as Checkbox } from './Basics/Checkbox';
 export { default as Icon } from './Basics/Icon';
 export { default as RadioButton } from './Basics/RadioButton';
 export { default as Toggle } from './Basics/Toggle';
+export { default as Typography } from './Basics/Typography';
 
 export { default as Stepper } from './Navigation/Stepper';
