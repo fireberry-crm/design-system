@@ -17,6 +17,8 @@ export const ListItemContainer = styled.li<{ selected?: boolean; active?: boolea
   cursor: ${({ clickable, disabled }) => (disabled ? 'not-allowed' : clickable ? 'pointer' : 'default')};
   opacity: ${({ disabled }) => (disabled ? 0.5 : 1)};
   transition: background-color 0.2s ease, color 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
 
   &:hover {
     background-color: ${({ selected, disabled }) =>

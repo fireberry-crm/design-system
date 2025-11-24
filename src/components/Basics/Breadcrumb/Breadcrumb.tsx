@@ -4,8 +4,10 @@ import { BreadcrumbProps } from './types';
 import Icon from '../Icon';
 import { IconName, IconSize } from '../Icon/types';
 import { palette } from '../../../context/ThemeContext/palette';
+import { useDSThemeContext } from '../../../context/ThemeContext';
 
 const Breadcrumb: FC<BreadcrumbProps> = ({ items, onItemClick }) => {
+  const { isRtl } = useDSThemeContext();
   const handleClick = (item: typeof items[0], index: number) => (e: React.MouseEvent<HTMLAnchorElement>) => {
     if (onItemClick) {
       e.preventDefault();
@@ -33,8 +35,12 @@ const Breadcrumb: FC<BreadcrumbProps> = ({ items, onItemClick }) => {
                 {item.label}
               </S.BreadcrumbLink>
               {!isLast && (
-                <S.Separator >
-                  <Icon icon={IconName.AngleRightSmall} size={IconSize['14px']} color={palette.gray10} />
+                <S.Separator>
+                  <Icon
+                    icon={isRtl ? IconName.AngleLeftSmall : IconName.AngleRightSmall}
+                    size={IconSize['14px']}
+                    color={palette.gray10}
+                  />
                 </S.Separator>
               )}
             </S.BreadcrumbItem>

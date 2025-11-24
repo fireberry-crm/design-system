@@ -26,6 +26,8 @@ export const BreadcrumbLink = styled.a<{ isLast: boolean }>`
   text-decoration: none;
   cursor: ${({ isLast }) => (isLast ? 'default' : 'pointer')};
   pointer-events: ${({ isLast }) => (isLast ? 'none' : 'auto')};
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
 
   &:hover {
     text-decoration: ${({ isLast }) => (isLast ? 'none' : 'underline')};
