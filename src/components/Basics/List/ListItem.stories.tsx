@@ -44,7 +44,9 @@ export const Default: Story = {
   render: (args) => (
     <div style={{ width: '300px' }}>
       <ListItem {...args}>
+        <ListItemIcon icon={IconName.Home} />
         <ListItemText>List Item</ListItemText>
+        <ListItemIcon icon={IconName.AngleRightSmall} />
       </ListItem>
     </div>
   ),
