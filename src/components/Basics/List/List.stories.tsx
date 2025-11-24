@@ -444,5 +444,3 @@ export const DynamicIcon: Story = {
     );
   },
 };
-
-
