@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import Breadcrumb from './Breadcrumb';
+import { DSThemeContextProvider } from '../../../context/ThemeContext';
 
 const meta: Meta<typeof Breadcrumb> = {
   title: 'Basics/Breadcrumb',
@@ -114,5 +115,59 @@ export const AllStates: Story = {
         />
       </div>
     </div>
+  ),
+};
+
+export const HebrewRTL: Story = {
+  render: () => (
+    <DSThemeContextProvider isRtl={true}>
+      <div style={{ direction: 'rtl' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+          <div>
+            <h3 style={{ marginBottom: '12px' }}>עברית - דף בית</h3>
+            <Breadcrumb
+              items={[
+                { label: 'דף הבית', href: '#' },
+              ]}
+            />
+          </div>
+
+          <div>
+            <h3 style={{ marginBottom: '12px' }}>עברית - שני פריטים</h3>
+            <Breadcrumb
+              items={[
+                { label: 'דף הבית', href: '#' },
+                { label: 'מוצרים', href: '#' },
+              ]}
+            />
+          </div>
+
+          <div>
+            <h3 style={{ marginBottom: '12px' }}>עברית - מסלול ניווט מלא</h3>
+            <Breadcrumb
+              items={[
+                { label: 'דף הבית', href: '#' },
+                { label: 'קטגוריה', href: '#' },
+                { label: 'תת קטגוריה', href: '#' },
+                { label: 'מוצר', href: '#' },
+                { label: 'פרטים' },
+              ]}
+            />
+          </div>
+
+          <div>
+            <h3 style={{ marginBottom: '12px' }}>עברית - הגדרות מערכת</h3>
+            <Breadcrumb
+              items={[
+                { label: 'ראשי', href: '#' },
+                { label: 'הגדרות', href: '#' },
+                { label: 'משתמשים', href: '#' },
+                { label: 'הרשאות' },
+              ]}
+            />
+          </div>
+        </div>
+      </div>
+    </DSThemeContextProvider>
   ),
 };

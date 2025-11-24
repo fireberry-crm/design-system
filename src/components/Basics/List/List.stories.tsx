@@ -444,3 +444,93 @@ export const DynamicIcon: Story = {
     );
   },
 };
+
+export const HebrewRTL: Story = {
+  args: {
+    children: null,
+  },
+  render: () => (
+    <div style={{ direction: 'rtl' }}>
+      <h3 style={{ marginBottom: '12px' }}>עברית - רשימה בסיסית</h3>
+      <List>
+        <ListItem>
+          <ListItemIcon icon={IconName.Home} />
+          <ListItemText>דף הבית</ListItemText>
+        </ListItem>
+        <ListItem>
+          <ListItemIcon icon={IconName.User} />
+          <ListItemText>משתמשים ותפקידים</ListItemText>
+        </ListItem>
+        <ListItem>
+          <ListItemIcon icon={IconName.Settings} />
+          <ListItemText>הגדרות</ListItemText>
+        </ListItem>
+        <ListItem>
+          <ListItemIcon icon={IconName.Star} />
+          <ListItemText>מועדפים</ListItemText>
+        </ListItem>
+      </List>
+
+      <h3 style={{ marginTop: '32px', marginBottom: '12px' }}>עברית - עם חיצים</h3>
+      <List>
+        <ListItem>
+          <ListItemIcon icon={IconName.Files} />
+          <ListItemText>מסמכים</ListItemText>
+          <ListItemIcon icon={IconName.AngleRightSmall} />
+        </ListItem>
+        <ListItem>
+          <ListItemIcon icon={IconName.Image} />
+          <ListItemText>תמונות</ListItemText>
+          <ListItemIcon icon={IconName.AngleRightSmall} />
+        </ListItem>
+        <ListItem>
+          <ListItemIcon icon={IconName.Download} />
+          <ListItemText>הורדות</ListItemText>
+          <ListItemIcon icon={IconName.AngleRightSmall} />
+        </ListItem>
+      </List>
+
+      <h3 style={{ marginTop: '32px', marginBottom: '12px' }}>עברית - עם מצב נבחר</h3>
+      <List>
+        <ListItem>
+          <ListItemIcon icon={IconName.Home} />
+          <ListItemText>ראשי</ListItemText>
+        </ListItem>
+        <ListItem selected>
+          <ListItemIcon icon={IconName.Settings} />
+          <ListItemText>הגדרות (נבחר)</ListItemText>
+        </ListItem>
+        <ListItem active>
+          <ListItemIcon icon={IconName.User} />
+          <ListItemText>פרופיל (פעיל)</ListItemText>
+        </ListItem>
+        <ListItem>
+          <ListItemIcon icon={IconName.Star} />
+          <ListItemText>מועדפים</ListItemText>
+        </ListItem>
+      </List>
+
+      <h3 style={{ marginTop: '32px', marginBottom: '12px' }}>עברית - פעולות מרובות</h3>
+      <List>
+        <ListItem>
+          <ListItemText>פרויקט ראשון</ListItemText>
+          <ListItemIcon icon={IconName.Edit} />
+          <ListItemIcon icon={IconName.Share} />
+          <ListItemIcon icon={IconName.Trash} />
+        </ListItem>
+        <ListItem>
+          <ListItemText>פרויקט שני</ListItemText>
+          <ListItemIcon icon={IconName.Edit} />
+          <ListItemIcon icon={IconName.Share} />
+          <ListItemIcon icon={IconName.Trash} />
+        </ListItem>
+        <ListItem>
+          <ListItemText>פרויקט שלישי</ListItemText>
+          <ListItemIcon icon={IconName.Edit} />
+          <ListItemIcon icon={IconName.Share} />
+          <ListItemIcon icon={IconName.Trash} />
+        </ListItem>
+      </List>
+    </div>
+  ),
+};
