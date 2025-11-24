@@ -88,11 +88,11 @@ function getTheme() {
       text: { fontSize: '14px', lineHeight: '20px' },
       caption: { fontSize: '12px', lineHeight: '16px' },
       colors: {
-        success: palette.green8,
-        destructive: palette.red7,
-        warning: palette.orange8,
+        success: palette.green9,
+        destructive: palette.red8,
+        warning: palette.orange9,
         neutral: palette.gray10,
-        information: palette.ocean8,
+        information: palette.ocean9,
       },
     },
   };
