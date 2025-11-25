@@ -2,6 +2,8 @@ import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
 import ListItem, { ListItemIcon, ListItemText } from '../ListItem';
 import { IconName } from '../Icon/types';
+import { DSThemeContextProvider } from '../../../context/ThemeContext';
+import List from '../List/List';
 
 const meta = {
   title: 'Basics/List/ListItem',
@@ -242,5 +244,35 @@ export const Playground: Story = {
         <ListItemIcon icon={IconName.AngleRightSmall} />
       </ListItem>
     </div>
+  ),
+};
+
+export const WithIndentRTL: Story = {
+  args: {
+    children: null,
+  },
+  render: () => (
+    <DSThemeContextProvider isRtl={true}>
+      <div style={{ direction: 'rtl' }}>
+        <List>
+          <ListItem indent={0}>
+            <ListItemIcon icon={IconName.Home} />
+            <ListItemText>No indent (0)</ListItemText>
+          </ListItem>
+          <ListItem indent={1}>
+            <ListItemIcon icon={IconName.Settings} />
+            <ListItemText>Indent 1 (28px from right)</ListItemText>
+          </ListItem>
+          <ListItem indent={2}>
+            <ListItemIcon icon={IconName.User} />
+            <ListItemText>Indent 2 (56px from right)</ListItemText>
+          </ListItem>
+          <ListItem indent={3}>
+            <ListItemIcon icon={IconName.Star} />
+            <ListItemText>Indent 3 (84px from right)</ListItemText>
+          </ListItem>
+        </List>
+      </div>
+    </DSThemeContextProvider>
   ),
 };

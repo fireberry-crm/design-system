@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import * as S from './style';
 import { ListItemProps } from './types';
 import { ListItemContext } from './ListItemContext';
+import { useDSThemeContext } from '../../../context/ThemeContext';
 
 const ListItem: FC<ListItemProps> = ({
   children,
@@ -10,6 +11,7 @@ const ListItem: FC<ListItemProps> = ({
   active = false,
   onClick,
 }) => {
+  const { isRtl } = useDSThemeContext();
 
   return (
     <ListItemContext.Provider value={{ selected, active }}>
@@ -18,6 +20,7 @@ const ListItem: FC<ListItemProps> = ({
         active={active}
         indent={indent}
         onClick={onClick}
+        $isRtl={isRtl}
       >
         {children}
       </S.ListItemContainer>
