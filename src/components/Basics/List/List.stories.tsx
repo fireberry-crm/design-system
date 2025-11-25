@@ -240,28 +240,6 @@ export const ActiveState: Story = {
   ),
 };
 
-export const DisabledState: Story = {
-  args: {
-    children: null,
-  },
-  render: () => (
-    <List>
-      <ListItem onClick={() => alert('Enabled')}>
-        <ListItemText>Enabled Item</ListItemText>
-      </ListItem>
-      <ListItem disabled onClick={() => alert('This should not fire')}>
-        <ListItemText>Disabled Item</ListItemText>
-      </ListItem>
-      <ListItem onClick={() => alert('Enabled')}>
-        <ListItemText>Enabled Item</ListItemText>
-      </ListItem>
-      <ListItem onClick={() => alert('Enabled')}>
-        <ListItemText>Enabled Item</ListItemText>
-      </ListItem>
-    </List>
-  ),
-};
-
 export const WithIndent: Story = {
   args: {
     children: null,
