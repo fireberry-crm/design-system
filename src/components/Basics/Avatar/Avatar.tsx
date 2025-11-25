@@ -2,23 +2,29 @@ import React, { FC, useState } from 'react';
 import * as S from './style';
 import { AvatarProps } from './types';
 import { generateAvatarColor } from './helpers';
+import { useEffect } from 'react';
 
 const Avatar: FC<AvatarProps> = ({ label='', imgSrc, alt }) => {
-  const [imageError, setImageError] = useState(false);
+  const [isValidImage, setIsValidImage] = useState(true);
 
   const getInitials = () => {
     return label.trim().substring(0, 2).toUpperCase();
   };
 
+
   const handleImageError = () => {
-    setImageError(true);
+    setIsValidImage(false);
   };
 
   const backgroundColor = generateAvatarColor(label);
 
+  useEffect(() => {
+    setIsValidImage(true);
+  }, [imgSrc]);
+
   return (
     <S.AvatarContainer $backgroundColor={backgroundColor}>
-      {imgSrc && !imageError ? (
+      {imgSrc && isValidImage ? (
         <S.AvatarImage
           src={imgSrc}
           alt={alt || label || 'Avatar'}
