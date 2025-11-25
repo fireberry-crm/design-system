@@ -21,7 +21,7 @@ export const ListItemContainer = styled.li<{ selected?: boolean; active?: boolea
   tap-highlight-color: transparent;
 
   &:hover {
-    background-color: ${({ selected }) => (selected ? palette.ocean1 : palette.gray2)};
+    background-color: ${({ selected }) => (selected ? palette.ocean1 : palette.gray1)};
   }
 
   &:focus-visible {

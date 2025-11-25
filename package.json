@@ -1,6 +1,6 @@
 {
   "name": "@fireberry/ds",
-  "version": "0.0.146",
+  "version": "0.0.147",
   "description": "Fireberry Design System",
   "type": "module",
   "main": "dist/cjs/index.js",
