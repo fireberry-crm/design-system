@@ -1,16 +1,13 @@
 import styled from 'styled-components';
 import { palette } from '../../../context/ThemeContext/palette';
 
-export const ListItemContainer = styled.li<{ selected?: boolean; active?: boolean; clickable?: boolean; indent?: number; $isRtl?: boolean }>`
+export const ListItemContainer = styled.li<{ selected?: boolean; active?: boolean; clickable?: boolean; indent?: number }>`
   box-sizing: border-box;
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 6px 12px 6px 6px;
-  ${({ indent, $isRtl }) => $isRtl
-    ? `padding-right: ${indent ? `${12 + indent * 28}px` : '12px'};`
-    : `padding-left: ${indent ? `${12 + indent * 28}px` : '12px'};`
-  }
+  padding: 10px 12px;
+  padding-inline-start: ${({ indent }) => (indent ? `${12 + indent * 28}px` : '12px')};
   height: 40px;
   font-size: 14px;
   line-height: 20px;
