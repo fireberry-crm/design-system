@@ -8,26 +8,17 @@ const ListItem: FC<ListItemProps> = ({
   indent,
   selected = false,
   active = false,
-  disabled = false,
   onClick,
 }) => {
-  const hasClickHandler = !!onClick;
-
-  const handleClick = () => {
-    if (!disabled && onClick) {
-      onClick();
-    }
-  };
+  const paddingInlineStart = indent ? 12 + indent * 28 : 12;
 
   return (
     <ListItemContext.Provider value={{ selected, active }}>
       <S.ListItemContainer
         selected={selected}
         active={active}
-        disabled={disabled}
-        clickable={hasClickHandler}
-        indent={indent}
-        onClick={handleClick}
+        paddingInlineStart={paddingInlineStart}
+        onClick={onClick}
       >
         {children}
       </S.ListItemContainer>
