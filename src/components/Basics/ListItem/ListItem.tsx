@@ -10,12 +10,14 @@ const ListItem: FC<ListItemProps> = ({
   active = false,
   onClick,
 }) => {
+  const paddingInlineStart = indent ? 12 + indent * 28 : 12;
+
   return (
     <ListItemContext.Provider value={{ selected, active }}>
       <S.ListItemContainer
         selected={selected}
         active={active}
-        indent={indent}
+        paddingInlineStart={paddingInlineStart}
         onClick={onClick}
       >
         {children}

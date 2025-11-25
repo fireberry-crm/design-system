@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 import { palette } from '../../../context/ThemeContext/palette';
 
-export const ListItemContainer = styled.li<{ selected?: boolean; active?: boolean; clickable?: boolean; indent?: number }>`
+export const ListItemContainer = styled.li<{ selected?: boolean; active?: boolean; clickable?: boolean; paddingInlineStart?: number }>`
   box-sizing: border-box;
   display: flex;
   align-items: center;
   gap: 12px;
   padding: 10px 12px;
-  padding-inline-start: ${({ indent }) => (indent ? `${12 + indent * 28}px` : '12px')};
+  padding-inline-start: ${({ paddingInlineStart }) => `${paddingInlineStart}px`};
   height: 40px;
   font-size: 14px;
   line-height: 20px;
