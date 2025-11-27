@@ -6,7 +6,7 @@ import Collapse from '../Collapse';
 import { IconName } from '../Icon/types';
 
 const meta = {
-  title: 'Basics/List',
+  title: 'Navigation/List/List',
   component: List,
   parameters: {
     layout: 'padded',
