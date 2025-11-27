@@ -6,7 +6,7 @@ import { DSThemeContextProvider } from '../../../context/ThemeContext';
 import List from '../List/List';
 
 const meta = {
-  title: 'Basics/List/ListItem',
+  title: 'Navigation/List/ListItem',
   component: ListItem,
   parameters: {
     layout: 'padded',
