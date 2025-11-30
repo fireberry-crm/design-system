@@ -301,124 +301,119 @@ export const DynamicIcon: Story = {
     };
 
     return (
-      <div>
-        <List>
-          <ListItem
-            onClick={() => handleParentClick('item1')}
-            selected={selectedItem === 'item1'}
-            active={isParentActive('item1')}
-          >
-            <ListItemText>Parent Item 1</ListItemText>
-            <ListItemIcon icon={openItems['item1'] ? IconName.AngleDownSmall : IconName.AngleRightSmall} />
-          </ListItem>
-        </List>
+      <List>
+        <ListItem
+          onClick={() => handleParentClick('item1')}
+          selected={selectedItem === 'item1'}
+          active={isParentActive('item1')}
+        >
+          <ListItemText>Parent Item 1</ListItemText>
+          <ListItemIcon icon={openItems['item1'] ? IconName.AngleDownSmall : IconName.AngleRightSmall} />
+        </ListItem>
         <Collapse isOpen={openItems['item1']}>
-          <List>
-            <ListItem
-              indent={1}
-              onClick={() => selectItem('item1.1')}
-              selected={selectedItem === 'item1.1'}
-            >
-              <ListItemIcon icon={IconName.Home} />
-              <ListItemText>Child Item 1.1</ListItemText>
-            </ListItem>
-            <ListItem
-              indent={1}
-              onClick={() => selectItem('item1.2')}
-              selected={selectedItem === 'item1.2'}
-            >
-              <ListItemIcon icon={IconName.Settings} />
-              <ListItemText>Child Item 1.2</ListItemText>
-            </ListItem>
-            <ListItem
-              indent={1}
-              onClick={() => selectItem('item1.3')}
-              selected={selectedItem === 'item1.3'}
-            >
-              <ListItemIcon icon={IconName.User} />
-              <ListItemText>Child Item 1.3</ListItemText>
-            </ListItem>
-          </List>
-        </Collapse>
+            <List>
+              <ListItem
+                indent={1}
+                onClick={() => selectItem('item1.1')}
+                selected={selectedItem === 'item1.1'}
+              >
+                <ListItemIcon icon={IconName.Home} />
+                <ListItemText>Child Item 1.1</ListItemText>
+              </ListItem>
+              <ListItem
+                indent={1}
+                onClick={() => selectItem('item1.2')}
+                selected={selectedItem === 'item1.2'}
+              >
+                <ListItemIcon icon={IconName.Settings} />
+                <ListItemText>Child Item 1.2</ListItemText>
+              </ListItem>
+              <ListItem
+                indent={1}
+                onClick={() => selectItem('item1.3')}
+                selected={selectedItem === 'item1.3'}
+              >
+                <ListItemIcon icon={IconName.User} />
+                <ListItemText>Child Item 1.3</ListItemText>
+              </ListItem>
+            </List>
+          </Collapse>
 
-        <List>
-          <ListItem
-            onClick={() => handleParentClick('item2')}
-            selected={selectedItem === 'item2'}
-            active={isParentActive('item2')}
-          >
-            <ListItemText>Parent Item 2</ListItemText>
-            <ListItemIcon icon={openItems['item2'] ? IconName.AngleDownSmall : IconName.AngleRightSmall} />
-          </ListItem>
-        </List>
+        <ListItem
+          onClick={() => handleParentClick('item2')}
+          selected={selectedItem === 'item2'}
+          active={isParentActive('item2')}
+        >
+          <ListItemText>Parent Item 2</ListItemText>
+          <ListItemIcon icon={openItems['item2'] ? IconName.AngleDownSmall : IconName.AngleRightSmall} />
+        </ListItem>
         <Collapse isOpen={openItems['item2']}>
-          <List>
-            <ListItem
-              indent={1}
-              onClick={() => selectItem('item2.1')}
-              selected={selectedItem === 'item2.1'}
-            >
-              <ListItemIcon icon={IconName.Star} />
-              <ListItemText>Child Item 2.1</ListItemText>
-            </ListItem>
-            <ListItem
-              indent={1}
-              onClick={() => selectItem('item2.2')}
-              selected={selectedItem === 'item2.2'}
-            >
-              <ListItemIcon icon={IconName.Heart} />
-              <ListItemText>Child Item 2.2</ListItemText>
-            </ListItem>
-          </List>
-        </Collapse>
+            <List>
+              <ListItem
+                indent={1}
+                onClick={() => selectItem('item2.1')}
+                selected={selectedItem === 'item2.1'}
+              >
+                <ListItemIcon icon={IconName.Star} />
+                <ListItemText>Child Item 2.1</ListItemText>
+              </ListItem>
+              <ListItem
+                indent={1}
+                onClick={() => selectItem('item2.2')}
+                selected={selectedItem === 'item2.2'}
+              >
+                <ListItemIcon icon={IconName.Heart} />
+                <ListItemText>Child Item 2.2</ListItemText>
+              </ListItem>
+            </List>
+          </Collapse>
 
-        <List>
-          <ListItem
-            onClick={() => handleParentClick('item3')}
-            selected={selectedItem === 'item3'}
-            active={isParentActive('item3')}
-          >
-            <ListItemText>Parent Item 3</ListItemText>
-            <ListItemIcon icon={openItems['item3'] ? IconName.AngleDownSmall : IconName.AngleRightSmall} />
-          </ListItem>
-        </List>
+        <ListItem
+          onClick={() => handleParentClick('item3')}
+          selected={selectedItem === 'item3'}
+          active={isParentActive('item3')}
+        >
+          <ListItemText>Parent Item 3</ListItemText>
+          <ListItemIcon icon={openItems['item3'] ? IconName.AngleDownSmall : IconName.AngleRightSmall} />
+
+        </ListItem>
         <Collapse isOpen={openItems['item3']}>
-          <List>
-            <ListItem
-              indent={1}
-              onClick={() => selectItem('item3.1')}
-              selected={selectedItem === 'item3.1'}
-            >
-              <ListItemIcon icon={IconName.Download} />
-              <ListItemText>Child Item 3.1</ListItemText>
-            </ListItem>
-            <ListItem
-              indent={1}
-              onClick={() => selectItem('item3.2')}
-              selected={selectedItem === 'item3.2'}
-            >
-              <ListItemIcon icon={IconName.Share} />
-              <ListItemText>Child Item 3.2</ListItemText>
-            </ListItem>
-            <ListItem
-              indent={1}
-              onClick={() => selectItem('item3.3')}
-              selected={selectedItem === 'item3.3'}
-            >
-              <ListItemIcon icon={IconName.Edit} />
-              <ListItemText>Child Item 3.3</ListItemText>
-            </ListItem>
-            <ListItem
-              indent={1}
-              onClick={() => selectItem('item3.4')}
-              selected={selectedItem === 'item3.4'}
-            >
-              <ListItemIcon icon={IconName.Trash} />
-              <ListItemText>Child Item 3.4</ListItemText>
-            </ListItem>
-          </List>
-        </Collapse>
-      </div>
+            <List>
+              <ListItem
+                indent={1}
+                onClick={() => selectItem('item3.1')}
+                selected={selectedItem === 'item3.1'}
+              >
+                <ListItemIcon icon={IconName.Download} />
+                <ListItemText>Child Item 3.1</ListItemText>
+              </ListItem>
+              <ListItem
+                indent={1}
+                onClick={() => selectItem('item3.2')}
+                selected={selectedItem === 'item3.2'}
+              >
+                <ListItemIcon icon={IconName.Share} />
+                <ListItemText>Child Item 3.2</ListItemText>
+              </ListItem>
+              <ListItem
+                indent={1}
+                onClick={() => selectItem('item3.3')}
+                selected={selectedItem === 'item3.3'}
+              >
+                <ListItemIcon icon={IconName.Edit} />
+                <ListItemText>Child Item 3.3</ListItemText>
+              </ListItem>
+              <ListItem
+                indent={1}
+                onClick={() => selectItem('item3.4')}
+                selected={selectedItem === 'item3.4'}
+              >
+                <ListItemIcon icon={IconName.Trash} />
+                <ListItemText>Child Item 3.4</ListItemText>
+              </ListItem>
+            </List>
+          </Collapse>
+      </List>
     );
   },
 };
