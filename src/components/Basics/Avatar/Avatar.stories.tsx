@@ -39,26 +39,11 @@ export const InitialB: Story = {
   },
 };
 
-export const InitialC: Story = {
-  args: {
-    label: 'Charlie',
-  },
-};
-
 export const WithPhoto: Story = {
   args: {
     label: 'John Doe',
-    imgSrc: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=89&h=89&fit=crop',
+    imgSrc: 'https://i.pravatar.cc/89?img=12',
     alt: 'John Doe avatar',
-  },
-};
-
-// Different photos
-export const WithPhoto2: Story = {
-  args: {
-    label: 'Jane Smith',
-    imgSrc: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=89&h=89&fit=crop',
-    alt: 'Jane Smith avatar',
   },
 };
 
@@ -74,15 +59,7 @@ export const AllExamples: Story = {
         <div style={{ marginTop: '8px', fontSize: '12px' }}>Initial: B</div>
       </div>
       <div style={{ textAlign: 'center' }}>
-        <Avatar label="Charlie" />
-        <div style={{ marginTop: '8px', fontSize: '12px' }}>Initial: C</div>
-      </div>
-      <div style={{ textAlign: 'center' }}>
-        <Avatar label="John Doe" imgSrc="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=89&h=89&fit=crop" />
-        <div style={{ marginTop: '8px', fontSize: '12px' }}>With Photo</div>
-      </div>
-      <div style={{ textAlign: 'center' }}>
-        <Avatar label="Jane Smith" imgSrc="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=89&h=89&fit=crop" />
+        <Avatar label="John Doe" imgSrc="https://i.pravatar.cc/89?img=12" />
         <div style={{ marginTop: '8px', fontSize: '12px' }}>With Photo</div>
       </div>
     </div>
