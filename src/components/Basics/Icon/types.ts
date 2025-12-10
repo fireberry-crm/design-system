@@ -1,7 +1,7 @@
 export interface IconProps {
   color?: string;
-  icon?: IconName;
-  size?: IconSize;
+  icon?: IconName | `${IconName}`;
+  size?: IconSize | `${IconSize}`;
   animation?: AnimationName;
 }
 

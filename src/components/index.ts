@@ -6,7 +6,7 @@ export { default as Breadcrumb } from './Basics/Breadcrumb';
 export { default as Avatar } from './Basics/Avatar';
 export { default as Checkbox } from './Basics/Checkbox';
 export { default as Collapse } from './Basics/Collapse';
-export { default as Icon } from './Basics/Icon';
+export * from './Basics/Icon';
 export { default as List } from './Basics/List';
 export { default as ListItem, ListItemIcon, ListItemText } from './Basics/ListItem';
 export { default as RadioButton } from './Basics/RadioButton';
