@@ -1,4 +1,7 @@
 {
+  "include": [
+    "src"
+  ],
   "compilerOptions": {
     // Default
     "target": "ES6",
@@ -9,6 +12,7 @@
     // Added
     "jsx": "react",
     "module": "ESNext",
+    "rootDir": "src",
     "declaration": true,
     "declarationDir": "types",
     "sourceMap": true,

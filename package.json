@@ -1,15 +1,24 @@
 {
   "name": "@fireberry/ds",
-  "version": "0.0.148",
+  "version": "0.0.149",
   "description": "Fireberry Design System",
   "type": "module",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/esm/types/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "default": "./dist/esm/index.js"
+    }
+  },
   "files": [
     "dist"
   ],
   "scripts": {
+    "prepare": "npm run build",
     "build": "rollup -c",
     "type-check": "tsc --emitDeclarationOnly false --noEmit",
     "build-storybook": "storybook build",
