@@ -6,13 +6,13 @@ import nucleoWoff from './fonts/Nucleo.woff';
 import nucleoWoff2 from './fonts/Nucleo.woff2';
 import { IconSize } from './types';
 
-interface IconProps {
+interface StyledIconProps {
   color?: string;
-  size?: IconSize;
+  size?: IconSize | `${IconSize}`;
   animation?: string;
 }
 
-export const Icon = styled.i<IconProps>`
+export const Icon = styled.i<StyledIconProps>`
   display: inline-flex;
   justify-content: center;
   align-items: center;
