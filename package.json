@@ -85,6 +85,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fireberry-crm/design-system.git"
+    "url": "git+https://github.com/fireberry-crm/design-system.git"
   }
 }

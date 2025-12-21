@@ -160,7 +160,7 @@ jobs:
 
     environment:
       name: npm
-      url: https://www.npmjs.com/package/${{ needs.build.outputs.name }}
+      url: https://www.npmjs.com/package/${{ needs.build.outputs.name }}/v/${{ needs.build.outputs.version }}
 
     steps:
       - name: Checkout repository
@@ -178,20 +178,19 @@ jobs:
           name: package-dist
           path: .
 
-      - name: Validate npm token
-        run: |
-          set -euo pipefail
-          [ -n "${{ secrets.NPM_TOKEN }}" ] || { echo "Missing secret NPM_TOKEN" >&2; exit 1; }
+      - name: Remove prepare script for npm publish
+        run: npm pkg delete scripts.prepare
 
       - name: Generate package attestation
         uses: actions/attest-build-provenance@v3
         with:
           subject-path: 'package.json'
 
+      - name: Update npm to latest version
+        run: npm install -g npm@latest
+
       - name: Publish to npm with provenance
         run: npm publish --provenance --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Create GitHub release
         run: |
