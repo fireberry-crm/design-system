@@ -17,14 +17,15 @@ const Avatar: FC<AvatarProps> = ({ label='', imgSrc, alt }) => {
   };
 
   const backgroundColor = generateAvatarColor(label);
+  const shouldShowImage = imgSrc && isValidImage;
 
   useEffect(() => {
     setIsValidImage(true);
   }, [imgSrc]);
 
   return (
-    <S.AvatarContainer $backgroundColor={backgroundColor}>
-      {imgSrc && isValidImage ? (
+    <S.AvatarContainer $backgroundColor={shouldShowImage ? 'transparent' : backgroundColor}>
+      {shouldShowImage ? (
         <S.AvatarImage
           src={imgSrc}
           alt={alt || label || 'Avatar'}
