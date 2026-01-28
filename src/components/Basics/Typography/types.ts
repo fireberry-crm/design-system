@@ -12,9 +12,9 @@ export enum TypographyType {
 }
 
 export interface TypographyProps {
-  type?: TypographyType;
+  type?: TypographyType | `${TypographyType}`;
   children: React.ReactNode;
-  color?: Color;
+  color?: Color | `${Color}`;
   bold?: boolean;
   underline?: boolean;
   ellipsis?: boolean;
