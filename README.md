@@ -8,7 +8,7 @@ https://design-system.fireberry.com/
 With npm:
 
 ```bash
-npm install @fireberry/ds
+npm install @fireberry/ds@latest
 ```
 
 ## Usage
