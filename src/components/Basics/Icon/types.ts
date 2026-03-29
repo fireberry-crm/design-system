@@ -24,6 +24,7 @@ export enum AnimationName {
 
 export enum IconName {
   AI = 'AI',
+  AISupport = 'AISupport',
   Admin = 'Admin',
   AirBalloon = 'AirBalloon',
   AlertFull = 'AlertFull',
