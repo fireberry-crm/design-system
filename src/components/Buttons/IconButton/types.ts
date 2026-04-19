@@ -4,6 +4,7 @@ import { IconName } from '../../Basics/Icon/types';
 export interface IconButtonProps {
   icon: IconName;
   isDisabled?: boolean;
+  isSelected?: boolean;
   size?: IconButtonSize;
   onClick?: () => void;
 }
@@ -21,6 +22,7 @@ export type IconButtonPalette = {
   default: string;
   accent: string;
   focus: string;
+  selected: string;
   disabled: string;
 };
 

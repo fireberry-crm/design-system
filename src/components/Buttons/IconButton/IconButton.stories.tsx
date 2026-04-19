@@ -23,6 +23,10 @@ export default {
       control: 'boolean',
       description: 'Button disabled state',
     },
+    isSelected: {
+      control: 'boolean',
+      description: 'Button selected/active state',
+    },
     onClick: {
       action: 'clicked',
       description: 'Button onClick handler',
@@ -89,6 +93,27 @@ export const Sizes: StoryObj<IconButtonStoryProps> = {
       await expect(mockOnClick).toHaveBeenCalledTimes(1);
       mockOnClick.mockReset();
     }
+  },
+};
+
+export const Selected: StoryObj<IconButtonStoryProps> = {
+  render: () => {
+    return <IconButton icon={IconName.Search} isSelected={true} onClick={mockOnClick} />;
+  },
+  play: async ({ canvasElement }: any) => {
+    const canvas = within(canvasElement);
+    const iconButton = canvas.getByRole('button');
+
+    const icon = iconButton.children[0];
+    if (!icon) return;
+
+    await expect(iconButton).toHaveStyle(`background: ${theme.iconButton.selected}`);
+    await expect(icon).toHaveStyle(`color: ${theme.iconButton.focus}`);
+
+    await expect(icon.classList[1]).toBe(`icon-${IconName.Search}`);
+
+    await userEvent.click(iconButton);
+    await expect(mockOnClick).toHaveBeenCalledTimes(1);
   },
 };
 
