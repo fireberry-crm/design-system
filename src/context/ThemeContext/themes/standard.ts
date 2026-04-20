@@ -57,6 +57,7 @@ function getTheme() {
       default: palette.gray7,
       accent: palette.gray2,
       focus: palette.ocean8,
+      selected: palette.gray2,
       disabled: palette.gray5,
     },
     radioButton: {
