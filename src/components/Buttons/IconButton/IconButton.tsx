@@ -6,19 +6,32 @@ import { getIconSize } from './helpers';
 import * as S from './style';
 import { IconButtonProps, IconButtonSize, IconButtonStyles } from './types';
 
-const IconButton: FC<IconButtonProps> = ({ icon, isDisabled = false, size = IconButtonSize['20px'], onClick = () => {} }) => {
+const DEFAULT_ICON_SIZE = IconButtonSize['20px'] as const;
+
+const IconButton: FC<IconButtonProps> = ({
+  icon,
+  isDisabled = false,
+  isSelected = false,
+  size = DEFAULT_ICON_SIZE,
+  onClick = () => {},
+}) => {
   const {
     theme: { iconButton },
   } = useDSThemeContext();
 
   const iconButtonStyles: IconButtonStyles = {
-    default: css`
-      background: none;
-      color: ${iconButton.default};
-    `,
+    default: isSelected
+      ? css`
+          background: ${iconButton.selected};
+          color: ${iconButton.focus};
+        `
+      : css`
+          background: none;
+          color: ${iconButton.default};
+        `,
     hover: css`
-      background: ${iconButton.accent};
-      color: ${iconButton.default};
+      background: ${isSelected ? iconButton.selected : iconButton.accent};
+      color: ${isSelected ? iconButton.focus : iconButton.default};
     `,
     focus: css`
       background: ${iconButton.accent};
