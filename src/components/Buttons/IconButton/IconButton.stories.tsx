@@ -107,7 +107,7 @@ export const Selected: StoryObj<IconButtonStoryProps> = {
     const icon = iconButton.children[0];
     if (!icon) return;
 
-    await expect(iconButton).toHaveStyle(`background: ${theme.iconButton.selected}`);
+    await expect(iconButton).toHaveStyle(`background-color: ${theme.iconButton.selected}`);
     await expect(icon).toHaveStyle(`color: ${theme.iconButton.focus}`);
 
     await expect(icon.classList[1]).toBe(`icon-${IconName.Search}`);
