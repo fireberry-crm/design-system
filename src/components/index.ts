@@ -1,3 +1,6 @@
+// Shared
+export type { BaseInputProps } from './Basics';
+
 // Buttons
 export { default as Button } from './Buttons/Button';
 export type { ButtonProps } from './Buttons/Button/types';
