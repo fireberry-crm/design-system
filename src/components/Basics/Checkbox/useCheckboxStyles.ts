@@ -2,11 +2,11 @@ import { useMemo } from 'react';
 import { css } from 'styled-components';
 import { useDSThemeContext } from '../../../context';
 import { Color } from '../../../types';
-import { CheckboxStyles, GetCheckboxStyle, Variant } from './types';
+import { CheckboxStyles, CheckboxVariant, GetCheckboxStyle } from './types';
 
 const useCheckboxStyles = (
   color: Color,
-  variant: Variant,
+  variant: CheckboxVariant,
   isSelected: boolean,
   error: boolean
 ): { checkboxStyles: CheckboxStyles | null; labelColor: string; errorLabelColor: string } => {
@@ -17,7 +17,7 @@ const useCheckboxStyles = (
   const checkboxStyles = useMemo(() => {
     const palette = checkbox[color ?? Color.success];
 
-    const shouldImplementCheckboxStyle = variant === Variant.circle || color === Color.success;
+    const shouldImplementCheckboxStyle = variant === CheckboxVariant.circle || color === Color.success;
 
     return palette && shouldImplementCheckboxStyle ? getCheckboxStyle(palette) : null;
   }, [color, variant, isSelected, error]);

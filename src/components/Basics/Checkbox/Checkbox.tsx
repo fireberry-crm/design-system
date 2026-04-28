@@ -3,7 +3,7 @@ import { Color } from '../../../types';
 import Icon from '../Icon';
 import { IconName, IconSize } from '../Icon/types';
 import * as S from './style';
-import { CheckboxProps, Variant } from './types';
+import { CheckboxProps, CheckboxVariant } from './types';
 import { useCheckboxStyles } from './useCheckboxStyles';
 
 const Checkbox: FC<CheckboxProps> = ({
@@ -17,7 +17,7 @@ const Checkbox: FC<CheckboxProps> = ({
   isDisabled = false,
   color = Color.success,
   isIndeterminate = false,
-  variant = Variant.square,
+  variant = CheckboxVariant.square,
   onChange = () => {},
 }) => {
   const iconName = !error && (isIndeterminate ? IconName.Minus : isChecked ? IconName.Check : null);
