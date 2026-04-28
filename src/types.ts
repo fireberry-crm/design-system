@@ -1,25 +1,29 @@
-export enum Mode {
-  standard = 'standard',
-}
+export const Mode = {
+  standard: 'standard',
+} as const;
+export type Mode = (typeof Mode)[keyof typeof Mode];
 
-export enum Variant {
-  primary = 'primary',
-  secondary = 'secondary',
-  text = 'text',
-  outlined = 'outlined',
-}
+export const Variant = {
+  primary: 'primary',
+  secondary: 'secondary',
+  text: 'text',
+  outlined: 'outlined',
+} as const;
+export type Variant = (typeof Variant)[keyof typeof Variant];
 
-export enum Color {
-  success = 'success',
-  destructive = 'destructive',
-  warning = 'warning',
-  neutral = 'neutral',
-  information = 'information',
-}
+export const Color = {
+  success: 'success',
+  destructive: 'destructive',
+  warning: 'warning',
+  neutral: 'neutral',
+  information: 'information',
+} as const;
+export type Color = (typeof Color)[keyof typeof Color];
 
-export enum Position {
-  start = 'start',
-  end = 'end',
-}
+export const Position = {
+  start: 'start',
+  end: 'end',
+} as const;
+export type Position = (typeof Position)[keyof typeof Position];
 
-export const PRIMARY_COLORS = [Color.success, Color.destructive];
+export const PRIMARY_COLORS: Color[] = [Color.success, Color.destructive];
