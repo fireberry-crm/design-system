@@ -1,5 +1,6 @@
 import { Color } from '../../../types';
 
+/** Available variants for Typography. */
 export const TypographyType = {
   h1: 'h1',
   h2: 'h2',
@@ -12,12 +13,19 @@ export const TypographyType = {
 } as const;
 export type TypographyType = (typeof TypographyType)[keyof typeof TypographyType];
 
+/** Props for the Typography component. */
 export interface TypographyProps {
+  /** Style variant. Defaults to `TypographyType.text`. */
   type?: TypographyType | `${TypographyType}`;
+  /** Text content. */
   children: React.ReactNode;
+  /** Semantic color. Defaults to `Color.neutral`. */
   color?: Color | `${Color}`;
+  /** Bold weight. Defaults to `false`. */
   bold?: boolean;
+  /** Underline. Defaults to `false`. */
   underline?: boolean;
+  /** Truncate with ellipsis on overflow. Defaults to `false`. */
   ellipsis?: boolean;
 }
 
