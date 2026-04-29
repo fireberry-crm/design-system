@@ -31,7 +31,7 @@ export type CheckboxPalettes = {
 
 export type CheckboxStyles = { [key: string]: FlattenSimpleInterpolation };
 
-export type GetCheckboxStyle = (CheckboxPalette: CheckboxPalette) => CheckboxStyles | null;
+export type GetCheckboxStyle = (CheckboxPalette: CheckboxPalette) => CheckboxStyles;
 
 export enum Variant {
   circle = 'circle',
