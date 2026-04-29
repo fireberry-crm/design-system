@@ -9,14 +9,15 @@ export interface IconButtonProps {
   onClick?: () => void;
 }
 
-export enum IconButtonSize {
-  '16px' = '16px',
-  '20px' = '20px',
-  '24px' = '24px',
-  '28px' = '28px',
-  '32px' = '32px',
-  '36px' = '36px',
-}
+export const IconButtonSize = {
+  '16px': '16px',
+  '20px': '20px',
+  '24px': '24px',
+  '28px': '28px',
+  '32px': '32px',
+  '36px': '36px',
+} as const;
+export type IconButtonSize = (typeof IconButtonSize)[keyof typeof IconButtonSize];
 
 export type IconButtonPalette = {
   default: string;

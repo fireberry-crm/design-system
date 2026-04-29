@@ -1,15 +1,16 @@
 import { Color } from '../../../types';
 
-export enum TypographyType {
-  h1 = 'h1',
-  h2 = 'h2',
-  h3 = 'h3',
-  title = 'title',
-  subTitle = 'subTitle',
-  largeText = 'largeText',
-  text = 'text',
-  caption = 'caption',
-}
+export const TypographyType = {
+  h1: 'h1',
+  h2: 'h2',
+  h3: 'h3',
+  title: 'title',
+  subTitle: 'subTitle',
+  largeText: 'largeText',
+  text: 'text',
+  caption: 'caption',
+} as const;
+export type TypographyType = (typeof TypographyType)[keyof typeof TypographyType];
 
 export interface TypographyProps {
   type?: TypographyType | `${TypographyType}`;

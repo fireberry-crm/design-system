@@ -6,7 +6,7 @@ import { getIconSize } from './helpers';
 import * as S from './style';
 import { IconButtonProps, IconButtonSize, IconButtonStyles } from './types';
 
-const DEFAULT_ICON_SIZE = IconButtonSize['20px'] as const;
+const DEFAULT_ICON_SIZE = IconButtonSize['20px'];
 
 const IconButton: FC<IconButtonProps> = ({
   icon,
