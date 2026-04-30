@@ -6,7 +6,7 @@ import { standard } from '../../../context/ThemeContext/themes';
 import { Color } from '../../../types';
 import { IconName, IconSize } from '../Icon/types';
 import Checkbox from './index';
-import { CheckboxProps, Variant } from './types';
+import { CheckboxProps, CheckboxVariant } from './types';
 
 const mockOnChange = fn();
 
@@ -46,7 +46,7 @@ export default {
     },
     variant: {
       control: 'radio',
-      options: [Variant.circle, Variant.square],
+      options: [CheckboxVariant.circle, CheckboxVariant.square],
       description: 'Checkbox variant',
     },
     id: {
@@ -150,7 +150,7 @@ export const Variants: StoryObj<CheckboxStoryProps> = {
         }}
       >
         <Checkbox isChecked={isChecked1} label={'Rounded'} onChange={handleCheckbox1} />
-        <Checkbox isChecked={isChecked2} variant={Variant.circle} label={'Circle'} onChange={handleCheckbox2} />
+        <Checkbox isChecked={isChecked2} variant={CheckboxVariant.circle} label={'Circle'} onChange={handleCheckbox2} />
       </div>
     );
   },
@@ -208,8 +208,8 @@ export const Colors: StoryObj<CheckboxStoryProps> = {
           gap: '16px',
         }}
       >
-        <Checkbox isChecked={isChecked1} variant={Variant.circle} label={'Success'} onChange={handleCheckbox1} />
-        <Checkbox isChecked={isChecked2} variant={Variant.circle} color={Color.information} label={'Information'} onChange={handleCheckbox2} />
+        <Checkbox isChecked={isChecked1} variant={CheckboxVariant.circle} label={'Success'} onChange={handleCheckbox1} />
+        <Checkbox isChecked={isChecked2} variant={CheckboxVariant.circle} color={Color.information} label={'Information'} onChange={handleCheckbox2} />
       </div>
     );
   },

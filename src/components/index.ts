@@ -5,6 +5,8 @@ export { default as MultiButton } from './Buttons/MultiButton';
 export { default as Breadcrumb } from './Basics/Breadcrumb';
 export { default as Avatar } from './Basics/Avatar';
 export { default as Checkbox } from './Basics/Checkbox';
+export { CheckboxVariant } from './Basics/Checkbox/types';
+export type { CheckboxProps } from './Basics/Checkbox/types';
 export { default as Collapse } from './Basics/Collapse';
 export * from './Basics/Icon';
 export { default as List } from './Basics/List';

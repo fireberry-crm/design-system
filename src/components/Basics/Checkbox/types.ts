@@ -6,7 +6,7 @@ export interface CheckboxProps extends BaseInputProps {
   color?: Color;
   label?: string;
   error?: boolean;
-  variant?: Variant;
+  variant?: CheckboxVariant;
   errorLabel?: string;
   isChecked?: boolean;
   isDisabled?: boolean;
@@ -33,8 +33,8 @@ export type CheckboxStyles = { [key: string]: FlattenSimpleInterpolation };
 
 export type GetCheckboxStyle = (CheckboxPalette: CheckboxPalette) => CheckboxStyles;
 
-export const Variant = {
+export const CheckboxVariant = {
   circle: 'circle',
   square: 'square',
 } as const;
-export type Variant = (typeof Variant)[keyof typeof Variant];
+export type CheckboxVariant = (typeof CheckboxVariant)[keyof typeof CheckboxVariant];
