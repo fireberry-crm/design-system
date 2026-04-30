@@ -1,14 +1,21 @@
 import { FlattenSimpleInterpolation } from 'styled-components';
 import { IconName } from '../../Basics/Icon/types';
 
+/** Props for the IconButton component. A round button containing only an icon. */
 export interface IconButtonProps {
+  /** Icon to render. */
   icon: IconName;
+  /** Disables interaction. Defaults to `false`. */
   isDisabled?: boolean;
+  /** Show the selected (pressed) state. Defaults to `false`. */
   isSelected?: boolean;
+  /** Button size. Defaults to `IconButtonSize['20px']`. */
   size?: IconButtonSize;
+  /** Called when the button is clicked. */
   onClick?: () => void;
 }
 
+/** Available sizes for IconButton. */
 export const IconButtonSize = {
   '16px': '16px',
   '20px': '20px',
