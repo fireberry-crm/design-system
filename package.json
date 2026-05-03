@@ -1,7 +1,23 @@
 {
   "name": "@fireberry/ds",
   "version": "0.0.157",
-  "description": "Fireberry Design System",
+  "description": "Fireberry Design System: React component library for building apps on the Fireberry platform. Buttons, form inputs, typography, icons, and theming.",
+  "keywords": [
+    "fireberry",
+    "fireberry-ds",
+    "design-system",
+    "react",
+    "react-components",
+    "component-library",
+    "ui",
+    "ui-kit",
+    "ui-components",
+    "icons",
+    "theming",
+    "rtl",
+    "typescript",
+    "storybook"
+  ],
   "type": "module",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -86,6 +102,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fireberry-crm/design-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fireberry-crm/design-system/issues"
   },
   "homepage": "https://design-system.fireberry.com/"
 }
