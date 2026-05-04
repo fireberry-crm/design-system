@@ -223,7 +223,7 @@ export const Icon: StoryObj<MultiButtonStoryProps> = {
 
     await expect(icon).toHaveStyle(`color: ${theme.button.success.contrast};`);
 
-    await expect(icon.classList[1]).toBe(`icon-${IconName.PlusSmall}`);
+    await expect(icon.classList[1]).toBe(`icon-new-${IconName.PlusSmall}`);
 
     await expect(button).toHaveStyle(`background-color: ${theme.button.success.default}; color: ${theme.button.success.contrast};`);
 

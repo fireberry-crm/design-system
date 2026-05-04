@@ -211,7 +211,7 @@ export const Icons: StoryObj<ButtonStoryProps> = {
       await expect(button).toHaveStyle(`background-color: ${theme.button.success.default}; color: ${theme.button.success.contrast}`);
       await expect(icon).toHaveStyle(`color: ${theme.button.success.contrast}; font-size: 14px`);
 
-      await expect(icon.classList[1]).toBe(`icon-${IconName.PlusSmall}`);
+      await expect(icon.classList[1]).toBe(`icon-new-${IconName.PlusSmall}`);
 
       await userEvent.click(button);
       await expect(mockOnClick).toHaveBeenCalledTimes(1);

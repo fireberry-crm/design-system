@@ -87,7 +87,7 @@ export const Sizes: StoryObj<IconButtonStoryProps> = {
       await expect(iconButton).toHaveStyle(`width: ${iconButtonSizeList[index]}; height: ${iconButtonSizeList[index]};`);
       await expect(icon).toHaveStyle(`color: ${theme.iconButton.default}; font-size: ${iconSizes[index]}`);
 
-      await expect(icon.classList[1]).toBe(`icon-${IconName.Search}`);
+      await expect(icon.classList[1]).toBe(`icon-new-${IconName.Search}`);
 
       await userEvent.click(iconButton);
       await expect(mockOnClick).toHaveBeenCalledTimes(1);
@@ -110,7 +110,7 @@ export const Selected: StoryObj<IconButtonStoryProps> = {
     await expect(iconButton).toHaveStyle(`background-color: ${theme.iconButton.selected}`);
     await expect(icon).toHaveStyle(`color: ${theme.iconButton.focus}`);
 
-    await expect(icon.classList[1]).toBe(`icon-${IconName.Search}`);
+    await expect(icon.classList[1]).toBe(`icon-new-${IconName.Search}`);
 
     await userEvent.click(iconButton);
     await expect(mockOnClick).toHaveBeenCalledTimes(1);
@@ -130,7 +130,7 @@ export const Disabled: StoryObj<IconButtonStoryProps> = {
 
     await expect(icon).toHaveStyle(`color: ${theme.iconButton.disabled}; cursor: auto;`);
 
-    await expect(icon.classList[1]).toBe(`icon-${IconName.Search}`);
+    await expect(icon.classList[1]).toBe(`icon-new-${IconName.Search}`);
 
     await userEvent.click(iconButton);
     await expect(mockOnClick).toHaveBeenCalledTimes(0);

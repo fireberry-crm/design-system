@@ -117,7 +117,7 @@ export const WithLabel: StoryObj<CheckboxStoryProps> = {
 
     await expect(label.textContent).toBe('Label');
 
-    await expect(icon.classList[1]).toBe(`icon-${IconName.Check}`);
+    await expect(icon.classList[1]).toBe(`icon-new-${IconName.Check}`);
 
     await userEvent.click(checkboxBase);
     await expect(mockOnChange).toHaveBeenCalledTimes(1);
@@ -174,7 +174,7 @@ export const Variants: StoryObj<CheckboxStoryProps> = {
 
       await expect(label.textContent).toBe(`${index === '0' ? 'Rounded' : 'Circle'}`);
 
-      await expect(icon.classList[1]).toBe(`icon-${IconName.Check}`);
+      await expect(icon.classList[1]).toBe(`icon-new-${IconName.Check}`);
 
       await userEvent.click(checkboxBase);
       await expect(mockOnChange).toHaveBeenCalledTimes(1);
@@ -233,7 +233,7 @@ export const Colors: StoryObj<CheckboxStoryProps> = {
 
       await expect(label.textContent).toBe(`${index === '0' ? 'Success' : 'Information'}`);
 
-      await expect(icon.classList[1]).toBe(`icon-${IconName.Check}`);
+      await expect(icon.classList[1]).toBe(`icon-new-${IconName.Check}`);
 
       await userEvent.click(checkboxBase);
       await expect(mockOnChange).toHaveBeenCalledTimes(1);
@@ -305,7 +305,7 @@ export const States: StoryObj<CheckboxStoryProps> = {
 
         await expect(icon).toHaveStyle(`color: ${theme.checkbox.success.contrast}; font-size: ${IconSize['10px']}`);
 
-        await expect(icon.classList[1]).toBe(`icon-${index == '1' ? IconName.Check : IconName.Minus}`);
+        await expect(icon.classList[1]).toBe(`icon-new-${index == '1' ? IconName.Check : IconName.Minus}`);
       }
 
       await expect(label).toHaveStyle(`color: ${theme.radioButton.text}`);
@@ -362,7 +362,7 @@ export const Disabled: StoryObj<CheckboxStoryProps> = {
 
         await expect(icon).toHaveStyle(`color: ${theme.checkbox.success.disabled.default}; font-size: ${IconSize['10px']}`);
 
-        await expect(icon.classList[1]).toBe(`icon-${index == '1' ? IconName.Check : IconName.Minus}`);
+        await expect(icon.classList[1]).toBe(`icon-new-${index == '1' ? IconName.Check : IconName.Minus}`);
       }
 
       await expect(label).toHaveStyle(`color: ${theme.radioButton.text}`);
