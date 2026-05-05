@@ -1,10 +1,16 @@
+/** Props for the Icon component. */
 export interface IconProps {
+  /** Icon color. Defaults to inherited color. */
   color?: string;
-  icon?: IconName | `${IconName}`;
-  size?: IconSize | `${IconSize}`;
+  /** Icon to render. Defaults to `IconName.PlusSmall`. */
+  icon?: IconName;
+  /** Icon size. Defaults to `IconSize['14px']`. */
+  size?: IconSize;
+  /** Optional animation, e.g. `AnimationName.spin`. */
   animation?: AnimationName;
 }
 
+/** Available icon sizes. */
 export const IconSize = {
   '8px': '8px',
   '10px': '10px',
@@ -19,11 +25,13 @@ export const IconSize = {
 } as const;
 export type IconSize = (typeof IconSize)[keyof typeof IconSize];
 
+/** Available animations for Icon. */
 export const AnimationName = {
   spin: 'spin',
 } as const;
 export type AnimationName = (typeof AnimationName)[keyof typeof AnimationName];
 
+/** Available icon names. */
 export const IconName = {
   AI: 'AI',
   AISupport: 'AISupport',
