@@ -9,6 +9,7 @@ export { default as Collapse } from './Basics/Collapse';
 export * from './Basics/Icon';
 export { default as List } from './Basics/List';
 export { default as ListItem, ListItemIcon, ListItemText } from './Basics/ListItem';
+export { default as ProgressBar } from './Basics/ProgressBar';
 export { default as RadioButton } from './Basics/RadioButton';
 export { default as Toggle } from './Basics/Toggle';
 export { default as Typography } from './Basics/Typography';
