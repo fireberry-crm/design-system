@@ -9,8 +9,6 @@ const ProgressBar: FC<ProgressBarProps> = ({ value, max = 100, width }) => {
   } = useDSThemeContext();
 
   const safeMax = max > 0 ? max : 100;
-  // Clamp progress to the 0–100 range so values above max render as a full bar
-  // and negative values render as empty.
   const percent = Math.min(100, Math.max(0, (value / safeMax) * 100));
 
   return (
