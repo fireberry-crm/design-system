@@ -1,5 +1,6 @@
 import React, { ReactNode, createContext, useContext, useMemo } from 'react';
 import { CheckboxPalettes } from '../../components/Basics/Checkbox/types';
+import { ProgressBarPalette } from '../../components/Basics/ProgressBar/types';
 import { RadioButtonPalette } from '../../components/Basics/RadioButton/types';
 import { TogglePalette } from '../../components/Basics/Toggle/types';
 import { TypographyPalette } from '../../components/Basics/Typography/types';
@@ -16,6 +17,7 @@ interface ThemeContextType {
     checkbox: CheckboxPalettes;
     iconButton: IconButtonPalette;
     stepper: StepperPalette;
+    progressBar: ProgressBarPalette;
     toggle: TogglePalette;
     radioButton: RadioButtonPalette;
     typography: TypographyPalette;

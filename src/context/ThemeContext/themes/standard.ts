@@ -72,6 +72,10 @@ function getTheme() {
       inactiveStep: palette.gray4,
       inactiveLine: palette.gray3,
     },
+    progressBar: {
+      track: palette.gray2,
+      fill: palette.ocean8,
+    },
     toggle: {
       default: palette.gray5,
       selected: palette.green8,
