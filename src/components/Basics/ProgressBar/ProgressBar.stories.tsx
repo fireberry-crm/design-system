@@ -38,10 +38,11 @@ export const Overview: StoryObj<ProgressBarStoryProps> = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
     const track = canvas.getByRole('progressbar');
-    const fill = track.children[0];
+    const fill = track.children[0] as HTMLElement;
 
     await expect(track).toHaveStyle(`background-color: ${theme.progressBar.track}`);
-    await expect(fill).toHaveStyle(`background-color: ${theme.progressBar.fill}; width: 40%;`);
+    await expect(fill).toHaveStyle(`background-color: ${theme.progressBar.fill}`);
+    await expect(fill.offsetWidth / track.clientWidth).toBeCloseTo(0.4, 2);
     await expect(track).toHaveAttribute('aria-valuenow', '40');
     await expect(track).toHaveAttribute('aria-valuemax', '100');
   },
@@ -55,10 +56,10 @@ export const WithMax: StoryObj<ProgressBarStoryProps> = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
     const track = canvas.getByRole('progressbar');
-    const fill = track.children[0];
+    const fill = track.children[0] as HTMLElement;
 
     await expect(track).toHaveAttribute('aria-valuemax', '1200');
-    await expect(fill).toHaveStyle('width: 45%;');
+    await expect(fill.offsetWidth / track.clientWidth).toBeCloseTo(0.45, 2);
   },
 };
 
@@ -83,10 +84,10 @@ export const Overflow: StoryObj<ProgressBarStoryProps> = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
     const track = canvas.getByRole('progressbar');
-    const fill = track.children[0];
+    const fill = track.children[0] as HTMLElement;
 
     // A value above max renders as a full progress bar.
-    await expect(fill).toHaveStyle('width: 100%;');
+    await expect(fill.offsetWidth / track.clientWidth).toBeCloseTo(1, 2);
   },
 };
 
