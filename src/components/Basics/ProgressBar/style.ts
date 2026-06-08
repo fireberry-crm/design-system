@@ -13,7 +13,7 @@ interface FillProps {
 export const Track = styled.div<TrackProps>`
   display: inline-block;
   box-sizing: border-box;
-  height: 8px;
+  height: 5px;
   width: ${({ width }) => (width ? `${width}px` : '100%')};
   background-color: ${({ color }) => color};
   border-radius: 50px;
