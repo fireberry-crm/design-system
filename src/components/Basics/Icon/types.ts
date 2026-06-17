@@ -193,6 +193,7 @@ export enum IconName {
   OrgTree = 'OrgTree',
   Page = 'Page',
   Pagoda = 'Pagoda',
+  PanCollapse = 'PanCollapse',
   Paperclip = 'Paperclip',
   Parenthesis = 'Parenthesis',
   Percentage = 'Percentage',
