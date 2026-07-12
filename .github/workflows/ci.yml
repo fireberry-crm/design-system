@@ -186,8 +186,8 @@ jobs:
         with:
           subject-path: 'package.json'
 
-      - name: Update npm to latest version
-        run: npm install -g npm@latest
+      - name: Update npm to latest compatible version
+        run: npm install -g npm@10
 
       - name: Publish to npm with provenance
         run: npm publish --provenance --access public
