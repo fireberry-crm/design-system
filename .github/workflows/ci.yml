@@ -169,7 +169,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20.x
+          node-version: 22.x
           registry-url: 'https://registry.npmjs.org/'
 
       - name: Download build artifacts
@@ -186,8 +186,8 @@ jobs:
         with:
           subject-path: 'package.json'
 
-      - name: Update npm to latest compatible version
-        run: npm install -g npm@10
+      - name: Update npm to latest version
+        run: npm install -g npm@latest
 
       - name: Publish to npm with provenance
         run: npm publish --provenance --access public
