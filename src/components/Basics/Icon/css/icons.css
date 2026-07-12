@@ -8,12 +8,11 @@ Generated using nucleoapp.com
 @font-face {
   font-family: 'Nucleo';
   src: url('../fonts/Nucleo.eot');
-  src:
-    url('../fonts/Nucleo.eot') format('embedded-opentype'),
-    url('../fonts/Nucleo.woff2') format('woff2'),
-    url('../fonts/Nucleo.woff') format('woff'),
-    url('../fonts/Nucleo.ttf') format('truetype'),
-    url('../fonts/Nucleo.svg') format('svg');
+  src: url('../fonts/Nucleo.eot') format('embedded-opentype'),
+       url('../fonts/Nucleo.woff2') format('woff2'),
+       url('../fonts/Nucleo.woff') format('woff'),
+       url('../fonts/Nucleo.ttf') format('truetype'),
+       url('../fonts/Nucleo.svg') format('svg');
 }
 
 /* base class */
@@ -27,29 +26,29 @@ Generated using nucleoapp.com
 }
 
 /* size examples - relative units */
-.icon-sm {
+.icon-new-sm {
   font-size: 0.8em;
 }
 
-.icon-lg {
+.icon-new-lg {
   font-size: 1.2em;
 }
 
 /* size examples - absolute units */
-.icon-16 {
+.icon-new-16 {
   font-size: 16px;
 }
 
-.icon-32 {
+.icon-new-32 {
   font-size: 32px;
 }
 
 /* rotate the icon infinitely */
-.icon-is-spinning {
-  animation: icon-spin 1s infinite linear;
+.icon-new-is-spinning {
+  animation: icon-new-spin 1s infinite linear;
 }
 
-@keyframes icon-spin {
+@keyframes icon-new-spin {
   0% {
     transform: rotate(0deg);
   }
@@ -59,1059 +58,1067 @@ Generated using nucleoapp.com
 }
 
 /* transform */
-.icon-rotate-90 {
+.icon-new-rotate-90 {
   transform: rotate(90deg);
 }
 
-.icon-rotate-180 {
+.icon-new-rotate-180 {
   transform: rotate(180deg);
 }
 
-.icon-rotate-270 {
+.icon-new-rotate-270 {
   transform: rotate(270deg);
 }
 
-.icon-flip-y {
+.icon-new-flip-y {
   transform: scaleY(-1);
 }
 
-.icon-flip-x {
+.icon-new-flip-x {
   transform: scaleX(-1);
 }
 
 /* icons */
 .icon-AI::before {
-  content: '\ea01';
+  content: "\ea01";
 }
 
 .icon-AICustomAction::before {
-  content: '\ea02';
+  content: "\ea02";
 }
 
 .icon-AIDataEnrichment::before {
-  content: '\ea03';
+  content: "\ea03";
 }
 
 .icon-AISummarize::before {
-  content: '\ea04';
+  content: "\ea04";
 }
 
 .icon-AISupport::before {
-  content: '\ea05';
+  content: "\ea05";
 }
 
 .icon-Admin::before {
-  content: '\ea06';
+  content: "\ea06";
 }
 
 .icon-Agent::before {
-  content: '\ea07';
+  content: "\ea07";
 }
 
 .icon-AirBalloon::before {
-  content: '\ea08';
+  content: "\ea08";
 }
 
 .icon-AlertFull::before {
-  content: '\ea09';
+  content: "\ea09";
 }
 
 .icon-AlignCenter::before {
-  content: '\ea0a';
+  content: "\ea0a";
 }
 
 .icon-AlignLeft::before {
-  content: '\ea0b';
+  content: "\ea0b";
 }
 
 .icon-AlignRight::before {
-  content: '\ea0c';
+  content: "\ea0c";
 }
 
 .icon-Allocate::before {
-  content: '\ea0d';
+  content: "\ea0d";
 }
 
 .icon-Anchor::before {
-  content: '\ea0e';
+  content: "\ea0e";
 }
 
 .icon-AngleDownLarge::before {
-  content: '\ea0f';
+  content: "\ea0f";
 }
 
 .icon-AngleDownSmall::before {
-  content: '\ea10';
+  content: "\ea10";
 }
 
 .icon-AngleLeftLarge::before {
-  content: '\ea11';
+  content: "\ea11";
 }
 
 .icon-AngleLeftSmall::before {
-  content: '\ea12';
+  content: "\ea12";
 }
 
 .icon-AngleRightLarge::before {
-  content: '\ea13';
+  content: "\ea13";
 }
 
 .icon-AngleRightSmall::before {
-  content: '\ea14';
+  content: "\ea14";
 }
 
 .icon-AngleUpLarge::before {
-  content: '\ea15';
+  content: "\ea15";
 }
 
 .icon-AngleUpSmall::before {
-  content: '\ea16';
+  content: "\ea16";
 }
 
 .icon-App::before {
-  content: '\ea17';
+  content: "\ea17";
 }
 
 .icon-ArrowCross::before {
-  content: '\ea18';
+  content: "\ea18";
 }
 
 .icon-ArrowDown::before {
-  content: '\ea19';
+  content: "\ea19";
 }
 
 .icon-ArrowLeft::before {
-  content: '\ea1a';
+  content: "\ea1a";
 }
 
 .icon-ArrowMerge::before {
-  content: '\ea1b';
+  content: "\ea1b";
 }
 
 .icon-ArrowRight::before {
-  content: '\ea1c';
+  content: "\ea1c";
 }
 
 .icon-ArrowUp::before {
-  content: '\ea1d';
+  content: "\ea1d";
 }
 
 .icon-Arrows::before {
-  content: '\ea1e';
+  content: "\ea1e";
 }
 
 .icon-Article::before {
-  content: '\ea1f';
+  content: "\ea1f";
 }
 
 .icon-Assign::before {
-  content: '\ea20';
+  content: "\ea20";
 }
 
 .icon-Avatar::before {
-  content: '\ea21';
+  content: "\ea21";
 }
 
 .icon-AvatarFull::before {
-  content: '\ea22';
+  content: "\ea22";
 }
 
 .icon-Bee::before {
-  content: '\ea23';
+  content: "\ea23";
 }
 
 .icon-Bell::before {
-  content: '\ea24';
+  content: "\ea24";
 }
 
 .icon-Boat::before {
-  content: '\ea25';
+  content: "\ea25";
 }
 
 .icon-Bold::before {
-  content: '\ea26';
+  content: "\ea26";
 }
 
 .icon-Bookmark::before {
-  content: '\ea27';
+  content: "\ea27";
 }
 
 .icon-BookmarkFull::before {
-  content: '\ea28';
+  content: "\ea28";
 }
 
 .icon-Books::before {
-  content: '\ea29';
+  content: "\ea29";
 }
 
 .icon-Box::before {
-  content: '\ea2a';
+  content: "\ea2a";
 }
 
 .icon-Branch::before {
-  content: '\ea2b';
+  content: "\ea2b";
 }
 
 .icon-Briefcase::before {
-  content: '\ea2c';
+  content: "\ea2c";
+}
+
+.icon-BrowserError::before {
+  content: "\ea2d";
 }
 
 .icon-Brush::before {
-  content: '\ea2d';
+  content: "\ea2e";
 }
 
 .icon-Bulb::before {
-  content: '\ea2e';
+  content: "\ea2f";
 }
 
 .icon-BusinessDetails::before {
-  content: '\ea2f';
+  content: "\ea30";
 }
 
 .icon-Calendar::before {
-  content: '\ea30';
+  content: "\ea31";
 }
 
 .icon-CallLog::before {
-  content: '\ea31';
+  content: "\ea32";
 }
 
 .icon-Camera::before {
-  content: '\ea32';
+  content: "\ea33";
 }
 
 .icon-Car::before {
-  content: '\ea33';
+  content: "\ea34";
 }
 
 .icon-Card::before {
-  content: '\ea34';
+  content: "\ea35";
 }
 
 .icon-Cards::before {
-  content: '\ea35';
+  content: "\ea36";
 }
 
 .icon-Cart::before {
-  content: '\ea36';
+  content: "\ea37";
 }
 
 .icon-Categorize::before {
-  content: '\ea37';
+  content: "\ea38";
 }
 
 .icon-Chain::before {
-  content: '\ea38';
+  content: "\ea39";
 }
 
 .icon-Channels::before {
-  content: '\ea39';
+  content: "\ea3a";
 }
 
 .icon-ChartBars::before {
-  content: '\ea3a';
+  content: "\ea3b";
 }
 
 .icon-Chat::before {
-  content: '\ea3b';
+  content: "\ea3c";
 }
 
 .icon-ChatConversation::before {
-  content: '\ea3c';
+  content: "\ea3d";
 }
 
 .icon-ChatQuestions::before {
-  content: '\ea3d';
+  content: "\ea3e";
 }
 
 .icon-Check::before {
-  content: '\ea3e';
+  content: "\ea3f";
 }
 
 .icon-CheckFull::before {
-  content: '\ea3f';
+  content: "\ea40";
 }
 
 .icon-CheckList::before {
-  content: '\ea40';
+  content: "\ea41";
 }
 
 .icon-CheckRectangle::before {
-  content: '\ea41';
+  content: "\ea42";
+}
+
+.icon-Classifier::before {
+  content: "\ea43";
 }
 
 .icon-Clock::before {
-  content: '\ea42';
+  content: "\ea44";
 }
 
 .icon-ClockFull::before {
-  content: '\ea43';
+  content: "\ea45";
 }
 
 .icon-Close::before {
-  content: '\ea44';
+  content: "\ea46";
 }
 
 .icon-Code::before {
-  content: '\ea45';
+  content: "\ea47";
 }
 
 .icon-Column::before {
-  content: '\ea46';
+  content: "\ea48";
 }
 
 .icon-Competing::before {
-  content: '\ea47';
+  content: "\ea49";
 }
 
 .icon-Connector::before {
-  content: '\ea48';
+  content: "\ea4a";
 }
 
 .icon-Converge::before {
-  content: '\ea49';
+  content: "\ea4b";
 }
 
 .icon-Copilot::before {
-  content: '\ea4a';
+  content: "\ea4c";
 }
 
 .icon-Crown::before {
-  content: '\ea4b';
+  content: "\ea4d";
 }
 
 .icon-CustomAction::before {
-  content: '\ea4c';
+  content: "\ea4e";
 }
 
 .icon-Design::before {
-  content: '\ea4d';
+  content: "\ea4f";
 }
 
 .icon-Desktop::before {
-  content: '\ea4e';
+  content: "\ea50";
 }
 
 .icon-Diamond::before {
-  content: '\ea4f';
+  content: "\ea51";
 }
 
 .icon-Dot::before {
-  content: '\ea50';
+  content: "\ea52";
 }
 
 .icon-Download::before {
-  content: '\ea51';
+  content: "\ea53";
 }
 
 .icon-Drag::before {
-  content: '\ea52';
+  content: "\ea54";
 }
 
 .icon-DragPointer::before {
-  content: '\ea53';
+  content: "\ea55";
 }
 
 .icon-Drop::before {
-  content: '\ea54';
+  content: "\ea56";
 }
 
 .icon-Duplicate::before {
-  content: '\ea55';
+  content: "\ea57";
 }
 
 .icon-Edit::before {
-  content: '\ea56';
+  content: "\ea58";
 }
 
 .icon-EditFull::before {
-  content: '\ea57';
+  content: "\ea59";
 }
 
 .icon-Editor::before {
-  content: '\ea58';
+  content: "\ea5a";
 }
 
 .icon-Email::before {
-  content: '\ea59';
+  content: "\ea5b";
 }
 
 .icon-EmailOpen::before {
-  content: '\ea5a';
+  content: "\ea5c";
 }
 
 .icon-EmailTemplate::before {
-  content: '\ea5b';
+  content: "\ea5d";
 }
 
 .icon-Excel::before {
-  content: '\ea5c';
+  content: "\ea5e";
 }
 
 .icon-Expand::before {
-  content: '\ea5d';
+  content: "\ea5f";
 }
 
 .icon-ExpandLeft::before {
-  content: '\ea5e';
+  content: "\ea60";
 }
 
 .icon-ExpandRight::before {
-  content: '\ea5f';
+  content: "\ea61";
 }
 
 .icon-Eye::before {
-  content: '\ea60';
+  content: "\ea62";
 }
 
 .icon-EyeView::before {
-  content: '\ea61';
+  content: "\ea63";
 }
 
 .icon-Fields::before {
-  content: '\ea62';
+  content: "\ea64";
 }
 
 .icon-FileExcel::before {
-  content: '\ea63';
+  content: "\ea65";
 }
 
 .icon-FilePDF::before {
-  content: '\ea64';
+  content: "\ea66";
 }
 
 .icon-FilePhoto::before {
-  content: '\ea65';
+  content: "\ea67";
 }
 
 .icon-FilePowerpoint::before {
-  content: '\ea66';
+  content: "\ea68";
 }
 
 .icon-FileText::before {
-  content: '\ea67';
+  content: "\ea69";
 }
 
 .icon-FileWord::before {
-  content: '\ea68';
+  content: "\ea6a";
 }
 
 .icon-Files::before {
-  content: '\ea69';
+  content: "\ea6b";
 }
 
 .icon-Filter::before {
-  content: '\ea6a';
+  content: "\ea6c";
 }
 
 .icon-FilterFull::before {
-  content: '\ea6b';
+  content: "\ea6d";
 }
 
 .icon-Flag::before {
-  content: '\ea6c';
+  content: "\ea6e";
 }
 
 .icon-Flask::before {
-  content: '\ea6d';
+  content: "\ea6f";
 }
 
 .icon-Flow::before {
-  content: '\ea6e';
+  content: "\ea70";
 }
 
 .icon-Flower::before {
-  content: '\ea6f';
+  content: "\ea71";
 }
 
 .icon-Form::before {
-  content: '\ea70';
+  content: "\ea72";
 }
 
 .icon-ForwardLeft::before {
-  content: '\ea71';
+  content: "\ea73";
 }
 
 .icon-ForwardLeftFull::before {
-  content: '\ea72';
+  content: "\ea74";
 }
 
 .icon-ForwardRight::before {
-  content: '\ea73';
+  content: "\ea75";
 }
 
 .icon-ForwardRightFull::before {
-  content: '\ea74';
+  content: "\ea76";
 }
 
 .icon-Fries::before {
-  content: '\ea75';
+  content: "\ea77";
 }
 
 .icon-Function::before {
-  content: '\ea76';
+  content: "\ea78";
 }
 
 .icon-Ghost::before {
-  content: '\ea77';
+  content: "\ea79";
 }
 
 .icon-Glass::before {
-  content: '\ea78';
+  content: "\ea7a";
 }
 
 .icon-Globe::before {
-  content: '\ea79';
+  content: "\ea7b";
 }
 
 .icon-Graph::before {
-  content: '\ea7a';
+  content: "\ea7c";
 }
 
 .icon-GraphArrow::before {
-  content: '\ea7b';
+  content: "\ea7d";
 }
 
 .icon-GraphBars::before {
-  content: '\ea7c';
+  content: "\ea7e";
 }
 
 .icon-Hamburger::before {
-  content: '\ea7d';
+  content: "\ea7f";
 }
 
 .icon-Hammer::before {
-  content: '\ea7e';
+  content: "\ea80";
 }
 
 .icon-Hashtag::before {
-  content: '\ea7f';
+  content: "\ea81";
 }
 
 .icon-Heart::before {
-  content: '\ea80';
+  content: "\ea82";
 }
 
 .icon-Help::before {
-  content: '\ea81';
+  content: "\ea83";
 }
 
 .icon-Hierarchy::before {
-  content: '\ea82';
+  content: "\ea84";
 }
 
 .icon-Highlight::before {
-  content: '\ea83';
+  content: "\ea85";
 }
 
 .icon-Home::before {
-  content: '\ea84';
+  content: "\ea86";
 }
 
 .icon-Hover::before {
-  content: '\ea85';
+  content: "\ea87";
 }
 
 .icon-Image::before {
-  content: '\ea86';
+  content: "\ea88";
 }
 
 .icon-Info::before {
-  content: '\ea87';
+  content: "\ea89";
 }
 
 .icon-Journey::before {
-  content: '\ea88';
+  content: "\ea8a";
 }
 
 .icon-Key::before {
-  content: '\ea89';
+  content: "\ea8b";
 }
 
 .icon-LandingPages::before {
-  content: '\ea8a';
+  content: "\ea8c";
 }
 
 .icon-Launcher::before {
-  content: '\ea8b';
+  content: "\ea8d";
 }
 
 .icon-Lightning::before {
-  content: '\ea8c';
+  content: "\ea8e";
 }
 
 .icon-LightningFull::before {
-  content: '\ea8d';
+  content: "\ea8f";
 }
 
 .icon-Link::before {
-  content: '\ea8e';
+  content: "\ea90";
 }
 
 .icon-ListMenu::before {
-  content: '\ea8f';
+  content: "\ea91";
 }
 
 .icon-Lock::before {
-  content: '\ea90';
+  content: "\ea92";
 }
 
 .icon-LockFull::before {
-  content: '\ea91';
+  content: "\ea93";
 }
 
 .icon-LockIP::before {
-  content: '\ea92';
+  content: "\ea94";
 }
 
 .icon-LockUser::before {
-  content: '\ea93';
+  content: "\ea95";
 }
 
 .icon-Log::before {
-  content: '\ea94';
+  content: "\ea96";
 }
 
 .icon-LogOut::before {
-  content: '\ea95';
+  content: "\ea97";
 }
 
 .icon-Manual::before {
-  content: '\ea96';
+  content: "\ea98";
 }
 
 .icon-Marketplace::before {
-  content: '\ea97';
+  content: "\ea99";
 }
 
 .icon-Megaphone::before {
-  content: '\ea98';
+  content: "\ea9a";
 }
 
 .icon-MenuHorizontal::before {
-  content: '\ea99';
+  content: "\ea9b";
 }
 
 .icon-MenuVertical::before {
-  content: '\ea9a';
+  content: "\ea9c";
 }
 
 .icon-Mic::before {
-  content: '\ea9b';
+  content: "\ea9d";
 }
 
 .icon-MicRec::before {
-  content: '\ea9c';
+  content: "\ea9e";
 }
 
 .icon-Minimize::before {
-  content: '\ea9d';
+  content: "\ea9f";
 }
 
 .icon-Minus::before {
-  content: '\ea9e';
+  content: "\eaa0";
 }
 
 .icon-MinusCircle::before {
-  content: '\ea9f';
+  content: "\eaa1";
 }
 
 .icon-MinusCircleFull::before {
-  content: '\eaa0';
+  content: "\eaa2";
 }
 
 .icon-Mobile::before {
-  content: '\eaa1';
+  content: "\eaa3";
 }
 
 .icon-Mountain::before {
-  content: '\eaa2';
+  content: "\eaa4";
 }
 
 .icon-Move::before {
-  content: '\eaa3';
+  content: "\eaa5";
 }
 
 .icon-Note::before {
-  content: '\eaa4';
+  content: "\eaa6";
 }
 
 .icon-Octagram::before {
-  content: '\eaa5';
+  content: "\eaa7";
 }
 
 .icon-Office::before {
-  content: '\eaa6';
+  content: "\eaa8";
 }
 
 .icon-OfficeFull::before {
-  content: '\eaa7';
+  content: "\eaa9";
 }
 
 .icon-OrgTree::before {
-  content: '\eaa8';
+  content: "\eaaa";
 }
 
 .icon-Page::before {
-  content: '\eaa9';
+  content: "\eaab";
 }
 
 .icon-Pagoda::before {
-  content: '\eaaa';
+  content: "\eaac";
 }
 
 .icon-PanCollapse::before {
-  content: '\eaab';
+  content: "\eaad";
 }
 
 .icon-Paperclip::before {
-  content: '\eaac';
+  content: "\eaae";
 }
 
 .icon-Parenthesis::before {
-  content: '\eaad';
+  content: "\eaaf";
 }
 
 .icon-Percentage::before {
-  content: '\eaae';
+  content: "\eab0";
 }
 
 .icon-Phone::before {
-  content: '\eaaf';
+  content: "\eab1";
 }
 
 .icon-Picklist::before {
-  content: '\eab0';
+  content: "\eab2";
 }
 
 .icon-PieChart::before {
-  content: '\eab1';
+  content: "\eab3";
 }
 
 .icon-Pin::before {
-  content: '\eab2';
+  content: "\eab4";
 }
 
 .icon-PinFull::before {
-  content: '\eab3';
+  content: "\eab5";
 }
 
 .icon-Pipeline::before {
-  content: '\eab4';
+  content: "\eab6";
 }
 
 .icon-PlayLeft::before {
-  content: '\eab5';
+  content: "\eab7";
 }
 
 .icon-PlayRight::before {
-  content: '\eab6';
+  content: "\eab8";
 }
 
 .icon-PlusCircle::before {
-  content: '\eab7';
+  content: "\eab9";
 }
 
 .icon-PlusCircleFull::before {
-  content: '\eab8';
+  content: "\eaba";
 }
 
 .icon-PlusLarge::before {
-  content: '\eab9';
+  content: "\eabb";
 }
 
 .icon-PlusSmall::before {
-  content: '\eaba';
+  content: "\eabc";
 }
 
 .icon-Point::before {
-  content: '\eabb';
+  content: "\eabd";
 }
 
 .icon-Power::before {
-  content: '\eabc';
+  content: "\eabe";
 }
 
 .icon-Print::before {
-  content: '\eabd';
+  content: "\eabf";
 }
 
 .icon-ProductsServices::before {
-  content: '\eabe';
+  content: "\eac0";
 }
 
 .icon-Profile::before {
-  content: '\eabf';
+  content: "\eac1";
 }
 
 .icon-Projector::before {
-  content: '\eac0';
+  content: "\eac2";
 }
 
 .icon-Properties::before {
-  content: '\eac1';
+  content: "\eac3";
 }
 
 .icon-Puzzle::before {
-  content: '\eac2';
+  content: "\eac4";
 }
 
 .icon-Receipt::before {
-  content: '\eac3';
+  content: "\eac5";
 }
 
 .icon-Record::before {
-  content: '\eac4';
+  content: "\eac6";
 }
 
 .icon-RecordHeader::before {
-  content: '\eac5';
+  content: "\eac7";
 }
 
 .icon-Redo::before {
-  content: '\eac6';
+  content: "\eac8";
 }
 
 .icon-Refresh::before {
-  content: '\eac7';
+  content: "\eac9";
 }
 
 .icon-Related::before {
-  content: '\eac8';
+  content: "\eaca";
 }
 
 .icon-ReplyAllLeft::before {
-  content: '\eac9';
+  content: "\eacb";
 }
 
 .icon-ReplyAllLeftFull::before {
-  content: '\eaca';
+  content: "\eacc";
 }
 
 .icon-ReplyAllRight::before {
-  content: '\eacb';
+  content: "\eacd";
 }
 
 .icon-ReplyAllRightFull::before {
-  content: '\eacc';
+  content: "\eace";
 }
 
 .icon-ReplyLeft::before {
-  content: '\eacd';
+  content: "\eacf";
 }
 
 .icon-ReplyLeftFull::before {
-  content: '\eace';
+  content: "\ead0";
 }
 
 .icon-ReplyRight::before {
-  content: '\eacf';
+  content: "\ead1";
 }
 
 .icon-ReplyRightFull::before {
-  content: '\ead0';
+  content: "\ead2";
 }
 
 .icon-Resource::before {
-  content: '\ead1';
+  content: "\ead3";
 }
 
 .icon-Robot::before {
-  content: '\ead2';
+  content: "\ead4";
 }
 
 .icon-Rocket::before {
-  content: '\ead3';
+  content: "\ead5";
 }
 
 .icon-Route::before {
-  content: '\ead4';
+  content: "\ead6";
 }
 
 .icon-Scorecard::before {
-  content: '\ead5';
+  content: "\ead7";
 }
 
 .icon-Search::before {
-  content: '\ead6';
+  content: "\ead8";
 }
 
 .icon-Security::before {
-  content: '\ead7';
+  content: "\ead9";
 }
 
 .icon-SecurityFull::before {
-  content: '\ead8';
+  content: "\eada";
 }
 
 .icon-Send::before {
-  content: '\ead9';
+  content: "\eadb";
 }
 
 .icon-SendFull::before {
-  content: '\eada';
+  content: "\eadc";
 }
 
 .icon-Settings::before {
-  content: '\eadb';
+  content: "\eadd";
 }
 
 .icon-ShakeHands::before {
-  content: '\eadc';
+  content: "\eade";
 }
 
 .icon-Share::before {
-  content: '\eadd';
+  content: "\eadf";
 }
 
 .icon-ShieldInfo::before {
-  content: '\eade';
+  content: "\eae0";
 }
 
 .icon-Smiley::before {
-  content: '\eadf';
+  content: "\eae1";
 }
 
 .icon-Snowflake::before {
-  content: '\eae0';
+  content: "\eae2";
 }
 
 .icon-Sort::before {
-  content: '\eae1';
+  content: "\eae3";
 }
 
 .icon-SortDown::before {
-  content: '\eae2';
+  content: "\eae4";
 }
 
 .icon-SortUp::before {
-  content: '\eae3';
+  content: "\eae5";
 }
 
 .icon-Spinner::before {
-  content: '\eae4';
+  content: "\eae6";
 }
 
 .icon-Split::before {
-  content: '\eae5';
+  content: "\eae7";
 }
 
 .icon-Star::before {
-  content: '\eae6';
+  content: "\eae8";
 }
 
 .icon-StarFull::before {
-  content: '\eae7';
+  content: "\eae9";
 }
 
 .icon-Status::before {
-  content: '\eae8';
+  content: "\eaea";
 }
 
 .icon-Stop::before {
-  content: '\eae9';
+  content: "\eaeb";
 }
 
 .icon-StopFull::before {
-  content: '\eaea';
+  content: "\eaec";
 }
 
 .icon-Stream::before {
-  content: '\eaeb';
+  content: "\eaed";
 }
 
 .icon-Table::before {
-  content: '\eaec';
+  content: "\eaee";
 }
 
 .icon-Target::before {
-  content: '\eaed';
+  content: "\eaef";
 }
 
 .icon-Templates::before {
-  content: '\eaee';
+  content: "\eaf0";
 }
 
 .icon-Text::before {
-  content: '\eaef';
+  content: "\eaf1";
 }
 
 .icon-ThumbDown::before {
-  content: '\eaf0';
+  content: "\eaf2";
 }
 
 .icon-ThumbUp::before {
-  content: '\eaf1';
+  content: "\eaf3";
 }
 
 .icon-Timer::before {
-  content: '\eaf2';
+  content: "\eaf4";
 }
 
 .icon-Tools::before {
-  content: '\eaf3';
+  content: "\eaf5";
 }
 
 .icon-Trash::before {
-  content: '\eaf4';
+  content: "\eaf6";
 }
 
 .icon-Trophy::before {
-  content: '\eaf5';
+  content: "\eaf7";
 }
 
 .icon-Truck::before {
-  content: '\eaf6';
+  content: "\eaf8";
 }
 
 .icon-Umbrella::before {
-  content: '\eaf7';
+  content: "\eaf9";
 }
 
 .icon-Undo::before {
-  content: '\eaf8';
+  content: "\eafa";
 }
 
 .icon-University::before {
-  content: '\eaf9';
+  content: "\eafb";
 }
 
 .icon-Upload::before {
-  content: '\eafa';
+  content: "\eafc";
 }
 
 .icon-User::before {
-  content: '\eafb';
+  content: "\eafd";
 }
 
 .icon-Users::before {
-  content: '\eafc';
+  content: "\eafe";
 }
 
 .icon-ViewPipeline::before {
-  content: '\eafd';
+  content: "\eaff";
 }
 
 .icon-Watermelon::before {
-  content: '\eafe';
+  content: "\eb00";
 }
 
 .icon-Whatsapp::before {
-  content: '\eaff';
+  content: "\eb01";
 }
 
 .icon-WorkSpace::before {
-  content: '\eb00';
+  content: "\eb02";
 }
 
 .icon-Workflow::before {
-  content: '\eb01';
+  content: "\eb03";
 }
 
 .icon-ZoomIn::before {
-  content: '\eb02';
+  content: "\eb04";
 }
 
 .icon-ZoomOut::before {
-  content: '\eb03';
+  content: "\eb05";
 }
